@@ -11,7 +11,7 @@
 				<column name="zone" />
 				<column name="item_url" />
 			</index>
-			<index name="unq_armor_class" unique="UNIQUE" >
+			<index name="unq_armor_class" unique="NORMAL" >
 				<column name="class" />
 			</index>
 			<fk name="fk_armor_item" to_schema="school project" to_table="item" >
@@ -80,9 +80,11 @@
 			<column name="uid" type="int" jt="4" mandatory="y" autoincrement="y" />
 			<column name="recoil" type="double" jt="8" mandatory="y" >
 				<defo>0</defo>
+				<comment><![CDATA[This is an attribute derived from the weapon_url's base recoil value and the recoil modifiers from any attachments fitted onto it. Note that recoil modifiers are handled as percentage values when calculating recoil. So a forgrip might have a recoil mod of -5 so you would multiply the base value of the weapon by .95 to get its adjusted value.]]></comment>
 			</column>
 			<column name="ergonomics" type="double" jt="8" mandatory="y" >
 				<defo>0</defo>
+				<comment><![CDATA[This is an attribute derived from the weapon_url's base ergo value and the ergo modifiers from any attachments fitted onto it.]]></comment>
 			</column>
 			<column name="type" type="varchar" length="100" jt="12" mandatory="y" />
 			<column name="item_url" type="varchar" length="100" jt="12" mandatory="y" />
@@ -95,7 +97,7 @@
 		</table>
 		<table name="firearm_compat" >
 			<column name="attachment_url" type="varchar" length="100" jt="12" mandatory="y" />
-			<column name="compatible_firearm" type="varchar" length="100" jt="12" mandatory="y" />
+			<column name="compatible_firearm" type="int" length="100" jt="4" mandatory="y" />
 			<index name="idx_attachement_compat_0" unique="PRIMARY_KEY" >
 				<column name="attachment_url" />
 				<column name="compatible_firearm" />
@@ -121,7 +123,7 @@
 		<table name="item" >
 			<comment><![CDATA[Master item table]]></comment>
 			<column name="url" type="varchar" length="100" jt="12" mandatory="y" />
-			<column name="value" type="int" jt="4" />
+			<column name="value" type="int" jt="4" mandatory="y" />
 			<index name="pk_item_url" unique="PRIMARY_KEY" >
 				<column name="url" />
 			</index>
@@ -159,8 +161,8 @@
 		</table>
 		<table name="player" >
 			<column name="username" type="varchar" length="100" jt="12" mandatory="y" />
-			<column name="level" type="int" jt="4" />
-			<column name="money" type="bigint" jt="-5" />
+			<column name="level" type="int" jt="4" mandatory="y" />
+			<column name="money" type="int" jt="4" mandatory="y" />
 			<index name="unq_player_username" unique="UNIQUE" >
 				<column name="username" />
 			</index>
@@ -185,9 +187,9 @@
 		</table>
 		<table name="player_sells" >
 			<column name="sell_id" type="int" jt="4" mandatory="y" autoincrement="y" />
-			<column name="username" type="varchar" length="100" jt="12" />
-			<column name="itemurl" type="varchar" length="100" jt="12" />
-			<column name="amount" type="int" jt="4" />
+			<column name="username" type="varchar" length="100" jt="12" mandatory="y" />
+			<column name="itemurl" type="varchar" length="100" jt="12" mandatory="y" />
+			<column name="amount" type="int" jt="4" mandatory="y" />
 			<index name="pk_player_buys_purchase_id_0" unique="PRIMARY_KEY" >
 				<column name="sell_id" />
 			</index>
@@ -200,9 +202,9 @@
 		</table>
 		<table name="suppressed" >
 			<comment><![CDATA[This table stores whether or not a weapon is suppressed and if it is what suppressor is attached to it. Something that isnt suppressed will not be included in here.]]></comment>
-			<column name="suppressor_url" type="varchar" length="100" jt="12" />
+			<column name="suppressor_url" type="varchar" length="100" jt="12" mandatory="y" />
 			<column name="firearm_uid" type="int" jt="4" mandatory="y" />
-			<index name="pk_suppressed_firearm_uid" unique="PRIMARY_KEY" >
+			<index name="idx_suppressed" unique="PRIMARY_KEY" >
 				<column name="firearm_uid" />
 			</index>
 			<fk name="fk_suppressed_suppressed" to_schema="school project" to_table="suppressor" >
@@ -231,7 +233,7 @@
 		<table name="trade" >
 			<column name="trade_uid" type="int" jt="4" mandatory="y" autoincrement="y" />
 			<column name="item_url" type="longtext" jt="-1" mandatory="y" />
-			<column name="cost" type="bigint" jt="-5" />
+			<column name="cost" type="int" jt="4" mandatory="y" />
 			<column name="seller" type="varchar" length="100" jt="12" mandatory="y" />
 			<column name="buyer" type="varchar" length="100" jt="12" mandatory="y" />
 			<index name="pk_trade_trade_uid" unique="PRIMARY_KEY" >
@@ -247,7 +249,7 @@
 		<table name="trader_buys" >
 			<column name="trader_name" type="varchar" length="100" jt="12" mandatory="y" />
 			<column name="item_url" type="varchar" length="100" jt="12" mandatory="y" />
-			<column name="amount" type="int" jt="4" />
+			<column name="amount" type="int" jt="4" mandatory="y" />
 			<index name="idx_trader_buys_trader_name" unique="PRIMARY_KEY" >
 				<column name="trader_name" />
 				<column name="item_url" />
@@ -262,7 +264,7 @@
 		<table name="trader_sells" >
 			<column name="trader_name" type="varchar" length="100" jt="12" mandatory="y" />
 			<column name="item_url" type="varchar" length="100" jt="12" mandatory="y" />
-			<column name="amount" type="int" jt="4" />
+			<column name="amount" type="int" jt="4" mandatory="y" />
 			<index name="idx_trader_buys_trader_name_0" unique="PRIMARY_KEY" >
 				<column name="trader_name" />
 				<column name="item_url" />
@@ -282,26 +284,27 @@
 		</table>
 	</schema>
 	<layout name="Default Layout" id="Layout_5122e6e" show_relation="columns" >
-		<entity schema="school project" name="player" color="C1D8EE" x="256" y="832" />
+		<comment><![CDATA[School Project]]></comment>
 		<entity schema="school project" name="owns" color="C1D8EE" x="544" y="768" />
-		<entity schema="school project" name="trader_sells" color="3986C1" x="1120" y="1040" />
-		<entity schema="school project" name="item" color="C1D8EE" x="816" y="896" />
-		<entity schema="school project" name="trader_buys" color="C1D8EE" x="1104" y="832" />
 		<entity schema="school project" name="traders" color="C1D8EE" x="1296" y="912" />
-		<entity schema="school project" name="player_sells" color="3986C1" x="560" y="912" />
 		<entity schema="school project" name="player_buys" color="C1D8EE" x="544" y="1056" />
-		<entity schema="school project" name="trade" color="C1D8EE" x="48" y="816" />
 		<entity schema="school project" name="caliber" color="C1D8EE" x="320" y="304" />
 		<entity schema="school project" name="chambers" color="C1D8EE" x="608" y="208" />
-		<entity schema="school project" name="armor" color="C1D8EE" x="224" y="560" />
-		<entity schema="school project" name="firearm_compat" color="3986C1" x="1136" y="336" />
 		<entity schema="school project" name="attachement_compat" color="C1D8EE" x="1104" y="240" />
-		<entity schema="school project" name="suppressed" color="C1D8EE" x="720" y="384" />
 		<entity schema="school project" name="suppressor" color="3986C1" x="832" y="192" />
 		<entity schema="school project" name="attachment" color="C1D8EE" x="1088" y="560" />
 		<entity schema="school project" name="fitted_to" color="C1D8EE" x="816" y="560" />
-		<entity schema="school project" name="firearm" color="C1D8EE" x="544" y="528" />
 		<entity schema="school project" name="penetrates" color="C1D8EE" x="240" y="432" />
+		<entity schema="school project" name="item" color="C1D8EE" x="816" y="896" />
+		<entity schema="school project" name="trader_buys" color="C1D8EE" x="1104" y="832" />
+		<entity schema="school project" name="trader_sells" color="3986C1" x="1120" y="1040" />
+		<entity schema="school project" name="suppressed" color="C1D8EE" x="720" y="384" />
+		<entity schema="school project" name="player_sells" color="3986C1" x="560" y="912" />
+		<entity schema="school project" name="player" color="C1D8EE" x="256" y="832" />
+		<entity schema="school project" name="trade" color="C1D8EE" x="48" y="816" />
+		<entity schema="school project" name="armor" color="C1D8EE" x="224" y="560" />
+		<entity schema="school project" name="firearm_compat" color="3986C1" x="1136" y="336" />
+		<entity schema="school project" name="firearm" color="C1D8EE" x="544" y="528" />
 		<callout x="304" y="48" pointer="Round" >
 			<comment><![CDATA[This project is in offline mode.
 Design the schema and save the design to project file. Later create or upgrade the schema on any database.
