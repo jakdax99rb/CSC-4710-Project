@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="School Project" id="Project_4b5a33" template="Default" database="MySql" >
+	<schema name="school project" >
+		<table name="item" >
+			<comment><![CDATA[Master item table]]></comment>
+			<column name="value" type="int" jt="4" />
+			<column name="url" type="long varchar" jt="-1" mandatory="y" />
+			<index name="pk_item_url" unique="PRIMARY_KEY" >
+				<column name="url" />
+			</index>
+		</table>
+	</schema>
+	<layout name="Default Layout" id="Layout_5122e6e" show_relation="columns" >
+		<entity schema="school project" name="item" color="C1D8EE" x="864" y="416" />
+		<callout x="48" y="48" pointer="Round" >
+			<comment><![CDATA[This project is in offline mode.
+Design the schema and save the design to project file. Later create or upgrade the schema on any database.
+Right-click the layout to add new tables. Drop this callout from its right-click pop-up menu.]]></comment>
+		</callout>
+	</layout>
+</project>
