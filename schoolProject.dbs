@@ -105,6 +105,9 @@
 			<fk name="fk_attachement_compat_0" to_schema="school project" to_table="firearm" delete_action="cascade" update_action="cascade" >
 				<fk_column name="compatible_firearm" pk="uid" />
 			</fk>
+			<fk name="fk_firearm_compat1" to_schema="school project" to_table="attachment" >
+				<fk_column name="attachment_url" pk="item_url" />
+			</fk>
 		</table>
 		<table name="fitted_to" >
 			<column name="firearm_uid" type="int" jt="4" mandatory="y" />
@@ -283,6 +286,7 @@
 			</index>
 		</table>
 	</schema>
+	<connector name="" database="MySql" host="localhost" port="3306" user="root" />
 	<layout name="Default Layout" id="Layout_5122e6e" show_relation="columns" >
 		<comment><![CDATA[School Project]]></comment>
 		<entity schema="school project" name="owns" color="C1D8EE" x="544" y="768" />
@@ -303,8 +307,8 @@
 		<entity schema="school project" name="player" color="C1D8EE" x="256" y="832" />
 		<entity schema="school project" name="trade" color="C1D8EE" x="48" y="816" />
 		<entity schema="school project" name="armor" color="C1D8EE" x="224" y="560" />
-		<entity schema="school project" name="firearm_compat" color="3986C1" x="1136" y="336" />
 		<entity schema="school project" name="firearm" color="C1D8EE" x="544" y="528" />
+		<entity schema="school project" name="firearm_compat" color="3986C1" x="1136" y="336" />
 		<callout x="304" y="48" pointer="Round" >
 			<comment><![CDATA[This project is in offline mode.
 Design the schema and save the design to project file. Later create or upgrade the schema on any database.
