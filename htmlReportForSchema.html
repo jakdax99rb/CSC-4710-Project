@@ -282,46 +282,6 @@ a {
 </g>
 
 <g transform='translate(0,110)'>
-<!-- == Fk 'owns_fk_owns_player' == -->
-<path id='owns_fk_owns_player'  onmouseover="hghl(['owns_fk_owns_player','school project.owns.player_name','school project.player.username'])" onmouseout="uhghl(['owns_fk_owns_player','school project.owns.player_name','school project.player.username'])" transform='translate(8,0)' class='scene' d='M 528,800L 344,800Q 336,800 336,808L 336,816' >
-	<title>Fk fk_owns_player
-owns ref player ( player_name -&gt; username )</title>
-</path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 528,800L 344,800Q 336,800 336,808L 336,816' ><title>Fk fk_owns_player
-owns ref player ( player_name -&gt; username )</title></path>
-<text x='468' y='795' transform='rotate(0 468,795)' class='relName'>player_name</text>
-<!-- == Fk 'owns_fk_owns_item' == -->
-<path id='owns_fk_owns_item'  onmouseover="hghl(['owns_fk_owns_item','school project.owns.item_url','school project.item.url'])" onmouseout="uhghl(['owns_fk_owns_item','school project.owns.item_url','school project.item.url'])" transform='translate(8,0)' class='scene' d='M 656,848L 824,848Q 832,848 832,856L 832,880' >
-	<title>Fk fk_owns_item
-owns ref item ( item_url -&gt; url )</title>
-</path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 656,848L 824,848Q 832,848 832,856L 832,880' ><title>Fk fk_owns_item
-owns ref item ( item_url -&gt; url )</title></path>
-<text x='665' y='843' transform='rotate(0 665,843)' class='relName'>item_url</text>
-<!-- == Fk 'player_buys_fk_player_buys_player' == -->
-<path id='player_buys_fk_player_buys_player'  onmouseover="hghl(['player_buys_fk_player_buys_player','school project.player_buys.username','school project.player.username'])" onmouseout="uhghl(['player_buys_fk_player_buys_player','school project.player_buys.username','school project.player.username'])" transform='translate(8,0)' class='scene' d='M 528,1056L 344,1056Q 336,1056 336,1048L 336,928' >
-	<title>Fk fk_player_buys_player
-player_buys ref player ( username )</title>
-</path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 528,1056L 344,1056Q 336,1056 336,1048L 336,928' ><title>Fk fk_player_buys_player
-player_buys ref player ( username )</title></path>
-<text x='484' y='1051' transform='rotate(0 484,1051)' class='relName'>username</text>
-<!-- == Fk 'player_buys_fk_player_buys_item' == -->
-<path id='player_buys_fk_player_buys_item'  onmouseover="hghl(['player_buys_fk_player_buys_item','school project.player_buys.itemurl','school project.item.url'])" onmouseout="uhghl(['player_buys_fk_player_buys_item','school project.player_buys.itemurl','school project.item.url'])" transform='translate(8,0)' class='scene' d='M 656,1072L 824,1072Q 832,1072 832,1064L 832,976' >
-	<title>Fk fk_player_buys_item
-player_buys ref item ( itemurl -&gt; url )</title>
-</path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 656,1072L 824,1072Q 832,1072 832,1064L 832,976' ><title>Fk fk_player_buys_item
-player_buys ref item ( itemurl -&gt; url )</title></path>
-<text x='665' y='1067' transform='rotate(0 665,1067)' class='relName'>itemurl</text>
-<!-- == Fk 'caliber_fk_caliber_item' == -->
-<path id='caliber_fk_caliber_item'  onmouseover="hghl(['caliber_fk_caliber_item','school project.caliber.item_url','school project.item.url'])" onmouseout="uhghl(['caliber_fk_caliber_item','school project.caliber.item_url','school project.item.url'])" transform='translate(8,0)' class='scene' d='M 416,400L 416,728Q 416,736 424,736L 680,736Q 688,736 688,744L 688,904Q 688,912 696,912L 800,912' >
-	<title>Fk fk_caliber_item
-caliber ref item ( item_url -&gt; url )</title>
-</path>
-<path transform='translate(8,0)' marker-start='url(#foot1)' marker-end='url(#arrow1)'    d='M 416,400L 416,728Q 416,736 424,736L 680,736Q 688,736 688,744L 688,904Q 688,912 696,912L 800,912' ><title>Fk fk_caliber_item
-caliber ref item ( item_url -&gt; url )</title></path>
-<text x='431' y='401' transform='rotate(90 431,401)' class='relName'>item_url</text>
 <!-- == Fk 'chambers_fk_chambers_caliber' == -->
 <path id='chambers_fk_chambers_caliber'  onmouseover="hghl(['chambers_fk_chambers_caliber','school project.chambers.caliber_url','school project.caliber.item_url'])" onmouseout="uhghl(['chambers_fk_chambers_caliber','school project.chambers.caliber_url','school project.caliber.item_url'])" transform='translate(8,0)' class='scene' d='M 592,256L 424,256Q 416,256 416,264L 416,288' >
 	<title>Fk fk_chambers_caliber
@@ -338,6 +298,14 @@ chambers ref firearm ( firearm_uid -&gt; uid )</title>
 <path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 624,288L 624,512' ><title>Fk fk_chambers_firearm
 chambers ref firearm ( firearm_uid -&gt; uid )</title></path>
 <text x='639' y='289' transform='rotate(90 639,289)' class='relName'>firearm_uid</text>
+<!-- == Fk 'suppressor_fk_attachment_item_0' == -->
+<path id='suppressor_fk_attachment_item_0'  onmouseover="hghl(['suppressor_fk_attachment_item_0','school project.suppressor.item_url','school project.item.url'])" onmouseout="uhghl(['suppressor_fk_attachment_item_0','school project.suppressor.item_url','school project.item.url'])" transform='translate(8,0)' class='scene' d='M 912,288L 912,520Q 912,528 920,528L 952,528Q 960,528 960,536L 960,904Q 960,912 952,912L 880,912' >
+	<title>Fk fk_attachment_item_0
+suppressor ref item ( item_url -&gt; url )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1)' marker-end='url(#arrow1)'    d='M 912,288L 912,520Q 912,528 920,528L 952,528Q 960,528 960,536L 960,904Q 960,912 952,912L 880,912' ><title>Fk fk_attachment_item_0
+suppressor ref item ( item_url -&gt; url )</title></path>
+<text x='927' y='289' transform='rotate(90 927,289)' class='relName'>item_url</text>
 <!-- == Fk 'attachement_compat_fk_attachement_compat' == -->
 <path id='attachement_compat_fk_attachement_compat'  onmouseover="hghl(['attachement_compat_fk_attachement_compat','school project.attachement_compat.attachment_url','school project.attachment.item_url'])" onmouseout="uhghl(['attachement_compat_fk_attachement_compat','school project.attachement_compat.attachment_url','school project.attachment.item_url'])" transform='translate(8,0)' class='scene' d='M 1088,288L 1064,288Q 1056,288 1056,296L 1056,552Q 1056,560 1064,560L 1072,560' >
 	<title>Fk fk_attachement_compat
@@ -354,38 +322,46 @@ attachement_compat ref attachment ( compatible_attachment -&gt; item_url )</titl
 <path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 1088,272L 1048,272Q 1040,272 1040,280L 1040,568Q 1040,576 1048,576L 1072,576' ><title>Fk fk_attachement_compat1
 attachement_compat ref attachment ( compatible_attachment -&gt; item_url )</title></path>
 <text x='968' y='267' transform='rotate(0 968,267)' class='relName'>compatible_attachment</text>
-<!-- == Fk 'suppressor_fk_attachment_item_0' == -->
-<path id='suppressor_fk_attachment_item_0'  onmouseover="hghl(['suppressor_fk_attachment_item_0','school project.suppressor.item_url','school project.item.url'])" onmouseout="uhghl(['suppressor_fk_attachment_item_0','school project.suppressor.item_url','school project.item.url'])" transform='translate(8,0)' class='scene' d='M 912,288L 912,520Q 912,528 920,528L 952,528Q 960,528 960,536L 960,904Q 960,912 952,912L 880,912' >
-	<title>Fk fk_attachment_item_0
-suppressor ref item ( item_url -&gt; url )</title>
+<!-- == Fk 'caliber_fk_caliber_item' == -->
+<path id='caliber_fk_caliber_item'  onmouseover="hghl(['caliber_fk_caliber_item','school project.caliber.item_url','school project.item.url'])" onmouseout="uhghl(['caliber_fk_caliber_item','school project.caliber.item_url','school project.item.url'])" transform='translate(8,0)' class='scene' d='M 416,400L 416,712Q 416,720 424,720L 680,720Q 688,720 688,728L 688,856Q 688,864 696,864L 840,864Q 848,864 848,872L 848,880' >
+	<title>Fk fk_caliber_item
+caliber ref item ( item_url -&gt; url )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot1)' marker-end='url(#arrow1)'    d='M 912,288L 912,520Q 912,528 920,528L 952,528Q 960,528 960,536L 960,904Q 960,912 952,912L 880,912' ><title>Fk fk_attachment_item_0
-suppressor ref item ( item_url -&gt; url )</title></path>
-<text x='927' y='289' transform='rotate(90 927,289)' class='relName'>item_url</text>
-<!-- == Fk 'attachment_fk_attachment_item' == -->
-<path id='attachment_fk_attachment_item'  onmouseover="hghl(['attachment_fk_attachment_item','school project.attachment.item_url','school project.item.url'])" onmouseout="uhghl(['attachment_fk_attachment_item','school project.attachment.item_url','school project.item.url'])" transform='translate(8,0)' class='scene' d='M 1104,656L 1104,792Q 1104,800 1096,800L 856,800Q 848,800 848,808L 848,880' >
-	<title>Fk fk_attachment_item
-attachment ref item ( item_url -&gt; url )</title>
+<path transform='translate(8,0)' marker-start='url(#foot1)' marker-end='url(#arrow1)'    d='M 416,400L 416,712Q 416,720 424,720L 680,720Q 688,720 688,728L 688,856Q 688,864 696,864L 840,864Q 848,864 848,872L 848,880' ><title>Fk fk_caliber_item
+caliber ref item ( item_url -&gt; url )</title></path>
+<text x='431' y='401' transform='rotate(90 431,401)' class='relName'>item_url</text>
+<!-- == Fk 'firearm_compat_fk_attachement_compat_0' == -->
+<path id='firearm_compat_fk_attachement_compat_0'  onmouseover="hghl(['firearm_compat_fk_attachement_compat_0','school project.firearm_compat.compatible_firearm','school project.firearm.uid'])" onmouseout="uhghl(['firearm_compat_fk_attachement_compat_0','school project.firearm_compat.compatible_firearm','school project.firearm.uid'])" transform='translate(8,0)' class='scene' d='M 1152,416L 1152,488Q 1152,496 1144,496L 648,496Q 640,496 640,504L 640,512' >
+	<title>Fk fk_attachement_compat_0
+firearm_compat ref firearm ( compatible_firearm -&gt; uid )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot1)' marker-end='url(#arrow1)'    d='M 1104,656L 1104,792Q 1104,800 1096,800L 856,800Q 848,800 848,808L 848,880' ><title>Fk fk_attachment_item
-attachment ref item ( item_url -&gt; url )</title></path>
-<text x='1119' y='657' transform='rotate(90 1119,657)' class='relName'>item_url</text>
-<!-- == Fk 'fitted_to_fk_fitted_to_firearm' == -->
-<path id='fitted_to_fk_fitted_to_firearm'  onmouseover="hghl(['fitted_to_fk_fitted_to_firearm','school project.fitted_to.firearm_uid','school project.firearm.uid'])" onmouseout="uhghl(['fitted_to_fk_fitted_to_firearm','school project.fitted_to.firearm_uid','school project.firearm.uid'])" transform='translate(8,0)' class='scene' d='M 800,560L 656,560' >
-	<title>Fk fk_fitted_to_firearm
-fitted_to ref firearm ( firearm_uid -&gt; uid )</title>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 1152,416L 1152,488Q 1152,496 1144,496L 648,496Q 640,496 640,504L 640,512' ><title>Fk fk_attachement_compat_0
+firearm_compat ref firearm ( compatible_firearm -&gt; uid )</title></path>
+<text x='1167' y='417' transform='rotate(90 1167,417)' class='relName'>compatible_firearm</text>
+<!-- == Fk 'firearm_compat_fk_firearm_compat1' == -->
+<path id='firearm_compat_fk_firearm_compat1'  onmouseover="hghl(['firearm_compat_fk_firearm_compat1','school project.firearm_compat.attachment_url','school project.attachment.item_url'])" onmouseout="uhghl(['firearm_compat_fk_firearm_compat1','school project.firearm_compat.attachment_url','school project.attachment.item_url'])" transform='translate(8,0)' class='scene' d='M 1168,416L 1168,544' >
+	<title>Fk fk_firearm_compat1
+firearm_compat ref attachment ( attachment_url -&gt; item_url )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 800,560L 656,560' ><title>Fk fk_fitted_to_firearm
-fitted_to ref firearm ( firearm_uid -&gt; uid )</title></path>
-<text x='748' y='555' transform='rotate(0 748,555)' class='relName'>firearm_uid</text>
-<!-- == Fk 'fitted_to_fk_fitted_to_attachment' == -->
-<path id='fitted_to_fk_fitted_to_attachment'  onmouseover="hghl(['fitted_to_fk_fitted_to_attachment','school project.fitted_to.attachment_url','school project.attachment.item_url'])" onmouseout="uhghl(['fitted_to_fk_fitted_to_attachment','school project.fitted_to.attachment_url','school project.attachment.item_url'])" transform='translate(8,0)' class='scene' d='M 944,592L 1072,592' >
-	<title>Fk fk_fitted_to_attachment
-fitted_to ref attachment ( attachment_url -&gt; item_url )</title>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 1168,416L 1168,544' ><title>Fk fk_firearm_compat1
+firearm_compat ref attachment ( attachment_url -&gt; item_url )</title></path>
+<text x='1183' y='417' transform='rotate(90 1183,417)' class='relName'>attachment_url</text>
+<!-- == Fk 'suppressed_fk_suppressed_suppressed' == -->
+<path id='suppressed_fk_suppressed_suppressed'  onmouseover="hghl(['suppressed_fk_suppressed_suppressed','school project.suppressed.suppressor_url','school project.suppressor.item_url'])" onmouseout="uhghl(['suppressed_fk_suppressed_suppressed','school project.suppressed.suppressor_url','school project.suppressor.item_url'])" transform='translate(8,0)' class='scene' d='M 800,368L 800,264Q 800,256 808,256L 816,256' >
+	<title>Fk fk_suppressed_suppressed
+suppressed ref suppressor ( suppressor_url -&gt; item_url )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 944,592L 1072,592' ><title>Fk fk_fitted_to_attachment
-fitted_to ref attachment ( attachment_url -&gt; item_url )</title></path>
-<text x='953' y='587' transform='rotate(0 953,587)' class='relName'>attachment_url</text>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 800,368L 800,264Q 800,256 808,256L 816,256' ><title>Fk fk_suppressed_suppressed
+suppressed ref suppressor ( suppressor_url -&gt; item_url )</title></path>
+<text x='803' y='363' transform='rotate(270 803,363)' class='relName'>suppressor_url</text>
+<!-- == Fk 'suppressed_fk_suppressed_firearm' == -->
+<path id='suppressed_fk_suppressed_firearm'  onmouseover="hghl(['suppressed_fk_suppressed_firearm','school project.suppressed.firearm_uid','school project.firearm.uid'])" onmouseout="uhghl(['suppressed_fk_suppressed_firearm','school project.suppressed.firearm_uid','school project.firearm.uid'])" transform='translate(8,0)' class='scene' d='M 736,464L 736,536Q 736,544 728,544L 656,544' >
+	<title>Fk fk_suppressed_firearm
+suppressed ref firearm ( firearm_uid -&gt; uid )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1)' marker-end='url(#arrow1)'    d='M 736,464L 736,536Q 736,544 728,544L 656,544' ><title>Fk fk_suppressed_firearm
+suppressed ref firearm ( firearm_uid -&gt; uid )</title></path>
+<text x='751' y='465' transform='rotate(90 751,465)' class='relName'>firearm_uid</text>
 <!-- == Fk 'penetrates_fk_penetrates_armor' == -->
 <path id='penetrates_fk_penetrates_armor'  onmouseover="hghl(['penetrates_fk_penetrates_armor','school project.penetrates.armor_class','school project.armor.class'])" onmouseout="uhghl(['penetrates_fk_penetrates_armor','school project.penetrates.armor_class','school project.armor.class'])" transform='translate(8,0)' class='scene' d='M 256,512L 256,544' >
 	<title>Fk fk_penetrates_armor
@@ -402,6 +378,110 @@ penetrates ref caliber ( caliber_url -&gt; item_url )</title>
 <path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 336,416L 336,400' ><title>Fk fk_penetrates1
 penetrates ref caliber ( caliber_url -&gt; item_url )</title></path>
 <text x='339' y='411' transform='rotate(270 339,411)' class='relName'>caliber_url</text>
+<!-- == Fk 'firearm_fk_firearm_item' == -->
+<path id='firearm_fk_firearm_item'  onmouseover="hghl(['firearm_fk_firearm_item','school project.firearm.item_url','school project.item.url'])" onmouseout="uhghl(['firearm_fk_firearm_item','school project.firearm.item_url','school project.item.url'])" transform='translate(8,0)' class='scene' d='M 640,656L 640,696Q 640,704 648,704L 776,704Q 784,704 784,712L 784,920Q 784,928 792,928L 800,928' >
+	<title>Fk fk_firearm_item
+firearm ref item ( item_url -&gt; url )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 640,656L 640,696Q 640,704 648,704L 776,704Q 784,704 784,712L 784,920Q 784,928 792,928L 800,928' ><title>Fk fk_firearm_item
+firearm ref item ( item_url -&gt; url )</title></path>
+<text x='655' y='657' transform='rotate(90 655,657)' class='relName'>item_url</text>
+<!-- == Fk 'fitted_to_fk_fitted_to_firearm' == -->
+<path id='fitted_to_fk_fitted_to_firearm'  onmouseover="hghl(['fitted_to_fk_fitted_to_firearm','school project.fitted_to.firearm_uid','school project.firearm.uid'])" onmouseout="uhghl(['fitted_to_fk_fitted_to_firearm','school project.fitted_to.firearm_uid','school project.firearm.uid'])" transform='translate(8,0)' class='scene' d='M 800,560L 656,560' >
+	<title>Fk fk_fitted_to_firearm
+fitted_to ref firearm ( firearm_uid -&gt; uid )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 800,560L 656,560' ><title>Fk fk_fitted_to_firearm
+fitted_to ref firearm ( firearm_uid -&gt; uid )</title></path>
+<text x='748' y='555' transform='rotate(0 748,555)' class='relName'>firearm_uid</text>
+<!-- == Fk 'fitted_to_fk_fitted_to_attachment' == -->
+<path id='fitted_to_fk_fitted_to_attachment'  onmouseover="hghl(['fitted_to_fk_fitted_to_attachment','school project.fitted_to.attachment_url','school project.attachment.item_url'])" onmouseout="uhghl(['fitted_to_fk_fitted_to_attachment','school project.fitted_to.attachment_url','school project.attachment.item_url'])" transform='translate(8,0)' class='scene' d='M 944,592L 1072,592' >
+	<title>Fk fk_fitted_to_attachment
+fitted_to ref attachment ( attachment_url -&gt; item_url )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 944,592L 1072,592' ><title>Fk fk_fitted_to_attachment
+fitted_to ref attachment ( attachment_url -&gt; item_url )</title></path>
+<text x='953' y='587' transform='rotate(0 953,587)' class='relName'>attachment_url</text>
+<!-- == Fk 'attachment_fk_attachment_item' == -->
+<path id='attachment_fk_attachment_item'  onmouseover="hghl(['attachment_fk_attachment_item','school project.attachment.item_url','school project.item.url'])" onmouseout="uhghl(['attachment_fk_attachment_item','school project.attachment.item_url','school project.item.url'])" transform='translate(8,0)' class='scene' d='M 1104,656L 1104,792Q 1104,800 1096,800L 984,800Q 976,800 976,808L 976,920Q 976,928 968,928L 880,928' >
+	<title>Fk fk_attachment_item
+attachment ref item ( item_url -&gt; url )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1)' marker-end='url(#arrow1)'    d='M 1104,656L 1104,792Q 1104,800 1096,800L 984,800Q 976,800 976,808L 976,920Q 976,928 968,928L 880,928' ><title>Fk fk_attachment_item
+attachment ref item ( item_url -&gt; url )</title></path>
+<text x='1119' y='657' transform='rotate(90 1119,657)' class='relName'>item_url</text>
+<!-- == Fk 'armor_fk_armor_item' == -->
+<path id='armor_fk_armor_item'  onmouseover="hghl(['armor_fk_armor_item','school project.armor.item_url','school project.item.url'])" onmouseout="uhghl(['armor_fk_armor_item','school project.armor.item_url','school project.item.url'])" transform='translate(8,0)' class='scene' d='M 288,656L 288,728Q 288,736 296,736L 824,736Q 832,736 832,744L 832,880' >
+	<title>Fk fk_armor_item
+armor ref item ( item_url -&gt; url )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 288,656L 288,728Q 288,736 296,736L 824,736Q 832,736 832,744L 832,880' ><title>Fk fk_armor_item
+armor ref item ( item_url -&gt; url )</title></path>
+<text x='303' y='657' transform='rotate(90 303,657)' class='relName'>item_url</text>
+<!-- == Fk 'trade_fk_trade_seller' == -->
+<path id='trade_fk_trade_seller'  onmouseover="hghl(['trade_fk_trade_seller','school project.trade.seller','school project.player.username'])" onmouseout="uhghl(['trade_fk_trade_seller','school project.trade.seller','school project.player.username'])" transform='translate(8,0)' class='scene' d='M 144,832L 240,832' >
+	<title>Fk fk_trade_seller
+trade ref player ( seller -&gt; username )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 144,832L 240,832' ><title>Fk fk_trade_seller
+trade ref player ( seller -&gt; username )</title></path>
+<text x='153' y='827' transform='rotate(0 153,827)' class='relName'>seller</text>
+<!-- == Fk 'trade_fk_trade_buyer' == -->
+<path id='trade_fk_trade_buyer'  onmouseover="hghl(['trade_fk_trade_buyer','school project.trade.buyer','school project.player.username'])" onmouseout="uhghl(['trade_fk_trade_buyer','school project.trade.buyer','school project.player.username'])" transform='translate(8,0)' class='scene' d='M 144,848L 240,848' >
+	<title>Fk fk_trade_buyer
+trade ref player ( buyer -&gt; username )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 144,848L 240,848' ><title>Fk fk_trade_buyer
+trade ref player ( buyer -&gt; username )</title></path>
+<text x='153' y='843' transform='rotate(0 153,843)' class='relName'>buyer</text>
+<!-- == Fk 'owns_fk_owns_player' == -->
+<path id='owns_fk_owns_player'  onmouseover="hghl(['owns_fk_owns_player','school project.owns.player_name','school project.player.username'])" onmouseout="uhghl(['owns_fk_owns_player','school project.owns.player_name','school project.player.username'])" transform='translate(8,0)' class='scene' d='M 528,800L 344,800Q 336,800 336,808L 336,816' >
+	<title>Fk fk_owns_player
+owns ref player ( player_name -&gt; username )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 528,800L 344,800Q 336,800 336,808L 336,816' ><title>Fk fk_owns_player
+owns ref player ( player_name -&gt; username )</title></path>
+<text x='468' y='795' transform='rotate(0 468,795)' class='relName'>player_name</text>
+<!-- == Fk 'owns_fk_owns_item' == -->
+<path id='owns_fk_owns_item'  onmouseover="hghl(['owns_fk_owns_item','school project.owns.item_url','school project.item.url'])" onmouseout="uhghl(['owns_fk_owns_item','school project.owns.item_url','school project.item.url'])" transform='translate(8,0)' class='scene' d='M 640,864L 640,888Q 640,896 648,896L 800,896' >
+	<title>Fk fk_owns_item
+owns ref item ( item_url -&gt; url )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 640,864L 640,888Q 640,896 648,896L 800,896' ><title>Fk fk_owns_item
+owns ref item ( item_url -&gt; url )</title></path>
+<text x='655' y='865' transform='rotate(90 655,865)' class='relName'>item_url</text>
+<!-- == Fk 'player_sells_fk_player_buys_player_0' == -->
+<path id='player_sells_fk_player_buys_player_0'  onmouseover="hghl(['player_sells_fk_player_buys_player_0','school project.player_sells.username','school project.player.username'])" onmouseout="uhghl(['player_sells_fk_player_buys_player_0','school project.player_sells.username','school project.player.username'])" transform='translate(8,0)' class='scene' d='M 432,880L 352,880' >
+	<title>Fk fk_player_buys_player_0
+player_sells ref player ( username )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 432,880L 352,880' ><title>Fk fk_player_buys_player_0
+player_sells ref player ( username )</title></path>
+<text x='388' y='875' transform='rotate(0 388,875)' class='relName'>username</text>
+<!-- == Fk 'player_sells_fk_player_buys_item_0' == -->
+<path id='player_sells_fk_player_buys_item_0'  onmouseover="hghl(['player_sells_fk_player_buys_item_0','school project.player_sells.item_url','school project.item.url'])" onmouseout="uhghl(['player_sells_fk_player_buys_item_0','school project.player_sells.item_url','school project.item.url'])" transform='translate(8,0)' class='scene' d='M 544,912L 800,912' >
+	<title>Fk fk_player_buys_item_0
+player_sells ref item ( item_url -&gt; url )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 544,912L 800,912' ><title>Fk fk_player_buys_item_0
+player_sells ref item ( item_url -&gt; url )</title></path>
+<text x='553' y='907' transform='rotate(0 553,907)' class='relName'>item_url</text>
+<!-- == Fk 'player_buys_fk_player_buys_player' == -->
+<path id='player_buys_fk_player_buys_player'  onmouseover="hghl(['player_buys_fk_player_buys_player','school project.player_buys.username','school project.player.username'])" onmouseout="uhghl(['player_buys_fk_player_buys_player','school project.player_buys.username','school project.player.username'])" transform='translate(8,0)' class='scene' d='M 528,1056L 344,1056Q 336,1056 336,1048L 336,928' >
+	<title>Fk fk_player_buys_player
+player_buys ref player ( username )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 528,1056L 344,1056Q 336,1056 336,1048L 336,928' ><title>Fk fk_player_buys_player
+player_buys ref player ( username )</title></path>
+<text x='484' y='1051' transform='rotate(0 484,1051)' class='relName'>username</text>
+<!-- == Fk 'player_buys_fk_player_buys_item' == -->
+<path id='player_buys_fk_player_buys_item'  onmouseover="hghl(['player_buys_fk_player_buys_item','school project.player_buys.item_url','school project.item.url'])" onmouseout="uhghl(['player_buys_fk_player_buys_item','school project.player_buys.item_url','school project.item.url'])" transform='translate(8,0)' class='scene' d='M 640,1040L 640,952Q 640,944 648,944L 800,944' >
+	<title>Fk fk_player_buys_item
+player_buys ref item ( item_url -&gt; url )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 640,1040L 640,952Q 640,944 648,944L 800,944' ><title>Fk fk_player_buys_item
+player_buys ref item ( item_url -&gt; url )</title></path>
+<text x='643' y='1035' transform='rotate(270 643,1035)' class='relName'>item_url</text>
 <!-- == Fk 'trader_buys_fk_trader_buys_item' == -->
 <path id='trader_buys_fk_trader_buys_item'  onmouseover="hghl(['trader_buys_fk_trader_buys_item','school project.trader_buys.item_url','school project.item.url'])" onmouseout="uhghl(['trader_buys_fk_trader_buys_item','school project.trader_buys.item_url','school project.item.url'])" transform='translate(8,0)' class='scene' d='M 1088,864L 872,864Q 864,864 864,872L 864,880' >
 	<title>Fk fk_trader_buys_item
@@ -434,142 +514,6 @@ trader_sells ref traders ( trader_name )</title>
 <path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 1216,1024L 1216,952Q 1216,944 1224,944L 1280,944' ><title>Fk fk_trader_buys_traders_0
 trader_sells ref traders ( trader_name )</title></path>
 <text x='1219' y='1019' transform='rotate(270 1219,1019)' class='relName'>trader_name</text>
-<!-- == Fk 'suppressed_fk_suppressed_suppressed' == -->
-<path id='suppressed_fk_suppressed_suppressed'  onmouseover="hghl(['suppressed_fk_suppressed_suppressed','school project.suppressed.suppressor_url','school project.suppressor.item_url'])" onmouseout="uhghl(['suppressed_fk_suppressed_suppressed','school project.suppressed.suppressor_url','school project.suppressor.item_url'])" transform='translate(8,0)' class='scene' d='M 800,368L 800,264Q 800,256 808,256L 816,256' >
-	<title>Fk fk_suppressed_suppressed
-suppressed ref suppressor ( suppressor_url -&gt; item_url )</title>
-</path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 800,368L 800,264Q 800,256 808,256L 816,256' ><title>Fk fk_suppressed_suppressed
-suppressed ref suppressor ( suppressor_url -&gt; item_url )</title></path>
-<text x='803' y='363' transform='rotate(270 803,363)' class='relName'>suppressor_url</text>
-<!-- == Fk 'suppressed_fk_suppressed_firearm' == -->
-<path id='suppressed_fk_suppressed_firearm'  onmouseover="hghl(['suppressed_fk_suppressed_firearm','school project.suppressed.firearm_uid','school project.firearm.uid'])" onmouseout="uhghl(['suppressed_fk_suppressed_firearm','school project.suppressed.firearm_uid','school project.firearm.uid'])" transform='translate(8,0)' class='scene' d='M 736,464L 736,536Q 736,544 728,544L 656,544' >
-	<title>Fk fk_suppressed_firearm
-suppressed ref firearm ( firearm_uid -&gt; uid )</title>
-</path>
-<path transform='translate(8,0)' marker-start='url(#foot1)' marker-end='url(#arrow1)'    d='M 736,464L 736,536Q 736,544 728,544L 656,544' ><title>Fk fk_suppressed_firearm
-suppressed ref firearm ( firearm_uid -&gt; uid )</title></path>
-<text x='751' y='465' transform='rotate(90 751,465)' class='relName'>firearm_uid</text>
-<!-- == Fk 'player_sells_fk_player_buys_player_0' == -->
-<path id='player_sells_fk_player_buys_player_0'  onmouseover="hghl(['player_sells_fk_player_buys_player_0','school project.player_sells.username','school project.player.username'])" onmouseout="uhghl(['player_sells_fk_player_buys_player_0','school project.player_sells.username','school project.player.username'])" transform='translate(8,0)' class='scene' d='M 544,912L 352,912' >
-	<title>Fk fk_player_buys_player_0
-player_sells ref player ( username )</title>
-</path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 544,912L 352,912' ><title>Fk fk_player_buys_player_0
-player_sells ref player ( username )</title></path>
-<text x='500' y='907' transform='rotate(0 500,907)' class='relName'>username</text>
-<!-- == Fk 'player_sells_fk_player_buys_item_0' == -->
-<path id='player_sells_fk_player_buys_item_0'  onmouseover="hghl(['player_sells_fk_player_buys_item_0','school project.player_sells.itemurl','school project.item.url'])" onmouseout="uhghl(['player_sells_fk_player_buys_item_0','school project.player_sells.itemurl','school project.item.url'])" transform='translate(8,0)' class='scene' d='M 656,928L 800,928' >
-	<title>Fk fk_player_buys_item_0
-player_sells ref item ( itemurl -&gt; url )</title>
-</path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 656,928L 800,928' ><title>Fk fk_player_buys_item_0
-player_sells ref item ( itemurl -&gt; url )</title></path>
-<text x='665' y='923' transform='rotate(0 665,923)' class='relName'>itemurl</text>
-<!-- == Fk 'trade_fk_trade_seller' == -->
-<path id='trade_fk_trade_seller'  onmouseover="hghl(['trade_fk_trade_seller','school project.trade.seller','school project.player.username'])" onmouseout="uhghl(['trade_fk_trade_seller','school project.trade.seller','school project.player.username'])" transform='translate(8,0)' class='scene' d='M 144,832L 240,832' >
-	<title>Fk fk_trade_seller
-trade ref player ( seller -&gt; username )</title>
-</path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 144,832L 240,832' ><title>Fk fk_trade_seller
-trade ref player ( seller -&gt; username )</title></path>
-<text x='153' y='827' transform='rotate(0 153,827)' class='relName'>seller</text>
-<!-- == Fk 'trade_fk_trade_buyer' == -->
-<path id='trade_fk_trade_buyer'  onmouseover="hghl(['trade_fk_trade_buyer','school project.trade.buyer','school project.player.username'])" onmouseout="uhghl(['trade_fk_trade_buyer','school project.trade.buyer','school project.player.username'])" transform='translate(8,0)' class='scene' d='M 144,848L 240,848' >
-	<title>Fk fk_trade_buyer
-trade ref player ( buyer -&gt; username )</title>
-</path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 144,848L 240,848' ><title>Fk fk_trade_buyer
-trade ref player ( buyer -&gt; username )</title></path>
-<text x='153' y='843' transform='rotate(0 153,843)' class='relName'>buyer</text>
-<!-- == Fk 'armor_fk_armor_item' == -->
-<path id='armor_fk_armor_item'  onmouseover="hghl(['armor_fk_armor_item','school project.armor.item_url','school project.item.url'])" onmouseout="uhghl(['armor_fk_armor_item','school project.armor.item_url','school project.item.url'])" transform='translate(8,0)' class='scene' d='M 288,656L 288,776Q 288,784 296,784L 504,784Q 512,784 512,792L 512,872Q 512,880 520,880L 776,880Q 784,880 784,888L 784,888Q 784,896 792,896L 800,896' >
-	<title>Fk fk_armor_item
-armor ref item ( item_url -&gt; url )</title>
-</path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 288,656L 288,776Q 288,784 296,784L 504,784Q 512,784 512,792L 512,872Q 512,880 520,880L 776,880Q 784,880 784,888L 784,888Q 784,896 792,896L 800,896' ><title>Fk fk_armor_item
-armor ref item ( item_url -&gt; url )</title></path>
-<text x='303' y='657' transform='rotate(90 303,657)' class='relName'>item_url</text>
-<!-- == Fk 'firearm_fk_firearm_item' == -->
-<path id='firearm_fk_firearm_item'  onmouseover="hghl(['firearm_fk_firearm_item','school project.firearm.item_url','school project.item.url'])" onmouseout="uhghl(['firearm_fk_firearm_item','school project.firearm.item_url','school project.item.url'])" transform='translate(8,0)' class='scene' d='M 640,656L 640,712Q 640,720 648,720L 760,720Q 768,720 768,728L 768,936Q 768,944 776,944L 800,944' >
-	<title>Fk fk_firearm_item
-firearm ref item ( item_url -&gt; url )</title>
-</path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 640,656L 640,712Q 640,720 648,720L 760,720Q 768,720 768,728L 768,936Q 768,944 776,944L 800,944' ><title>Fk fk_firearm_item
-firearm ref item ( item_url -&gt; url )</title></path>
-<text x='655' y='657' transform='rotate(90 655,657)' class='relName'>item_url</text>
-<!-- == Fk 'firearm_compat_fk_attachement_compat_0' == -->
-<path id='firearm_compat_fk_attachement_compat_0'  onmouseover="hghl(['firearm_compat_fk_attachement_compat_0','school project.firearm_compat.compatible_firearm','school project.firearm.uid'])" onmouseout="uhghl(['firearm_compat_fk_attachement_compat_0','school project.firearm_compat.compatible_firearm','school project.firearm.uid'])" transform='translate(8,0)' class='scene' d='M 1152,416L 1152,488Q 1152,496 1144,496L 648,496Q 640,496 640,504L 640,512' >
-	<title>Fk fk_attachement_compat_0
-firearm_compat ref firearm ( compatible_firearm -&gt; uid )</title>
-</path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 1152,416L 1152,488Q 1152,496 1144,496L 648,496Q 640,496 640,504L 640,512' ><title>Fk fk_attachement_compat_0
-firearm_compat ref firearm ( compatible_firearm -&gt; uid )</title></path>
-<text x='1167' y='417' transform='rotate(90 1167,417)' class='relName'>compatible_firearm</text>
-<!-- == Fk 'firearm_compat_fk_firearm_compat1' == -->
-<path id='firearm_compat_fk_firearm_compat1'  onmouseover="hghl(['firearm_compat_fk_firearm_compat1','school project.firearm_compat.attachment_url','school project.attachment.item_url'])" onmouseout="uhghl(['firearm_compat_fk_firearm_compat1','school project.firearm_compat.attachment_url','school project.attachment.item_url'])" transform='translate(8,0)' class='scene' d='M 1168,416L 1168,544' >
-	<title>Fk fk_firearm_compat1
-firearm_compat ref attachment ( attachment_url -&gt; item_url )</title>
-</path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 1168,416L 1168,544' ><title>Fk fk_firearm_compat1
-firearm_compat ref attachment ( attachment_url -&gt; item_url )</title></path>
-<text x='1183' y='417' transform='rotate(90 1183,417)' class='relName'>attachment_url</text>
-<!-- == Table 'owns' == -->
-<rect class='entity' style='stroke:#2A3C4F' x='544' y='760' width='112' height='96' rx='8' ry='8' />
-<path d='M 544 788 L 544 768 Q 544 760 552 760 L 648 760 Q 656 760 656 768 L 656 788 L544 788 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='544' y='760' width='112' height='96' rx='8' ry='8' style='fill:none;stroke:#393939'/>
-<a xlink:href='#school project.owns'><text x='582' y='779' >owns</text><title>Table school project.owns</title></a>
-  <use id='nn' x='546' y='797' xlink:href='#nn'/><use id='pk' x='546' y='796' xlink:href='#pk'><title>Pk test ( player_name, item_url ) </title></use><a xlink:href='#school project.owns_player_name'><text id='school project.owns.player_name' x='563' y='807' onmouseover="hghl(['owns_fk_owns_player','school project.player.username'])" onmouseout="uhghl(['owns_fk_owns_player','school project.player.username'])">player_name</text><title>player_name
-* varchar(100)</title></a>
-<a xlink:href='#school project.owns.player_name'><use id='fk' x='644' y='796' xlink:href='#fk'/><title>References player ( player_name -&gt; username ) </title></a>
-  <use id='nn' x='546' y='813' xlink:href='#nn'/><a xlink:href='#school project.owns_amount'><text id='school project.owns.amount' x='563' y='823'>amount</text><title>amount
-* int</title></a>
-<text x='653' y='820' text-anchor='end' class='colType'>#</text>  <use id='nn' x='546' y='829' xlink:href='#nn'/><use id='pk' x='546' y='828' xlink:href='#pk'><title>Pk test ( player_name, item_url ) </title></use><a xlink:href='#school project.owns_item_url'><text id='school project.owns.item_url' x='563' y='839' onmouseover="hghl(['owns_fk_owns_item','school project.item.url'])" onmouseout="uhghl(['owns_fk_owns_item','school project.item.url'])">item_url</text><title>item_url
-* longtext</title></a>
-<a xlink:href='#school project.owns.item_url'><use id='fk' x='644' y='828' xlink:href='#fk'/><title>References item ( item_url -&gt; url ) </title></a>
-
-<!-- == Table 'traders' == -->
-<rect class='entity' style='stroke:#2A3C4F' x='1296' y='904' width='112' height='64' rx='8' ry='8' />
-<path d='M 1296 932 L 1296 912 Q 1296 904 1304 904 L 1400 904 Q 1408 904 1408 912 L 1408 932 L1296 932 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='1296' y='904' width='112' height='64' rx='8' ry='8' style='fill:none;stroke:#393939'/>
-<a xlink:href='#school project.traders'><text x='1329' y='923' >traders</text><title>Table school project.traders</title></a>
-  <use id='nn' x='1298' y='941' xlink:href='#nn'/><use id='pk' x='1298' y='940' xlink:href='#pk'><title>Pk pk_traders_trader_name ( trader_name ) </title></use><a xlink:href='#school project.traders_trader_name'><text id='school project.traders.trader_name' x='1315' y='951' onmouseover="hghl(['trader_buys_fk_trader_buys_traders','school project.trader_buys.trader_name','trader_buys_fk_trader_buys_traders','school project.trader_buys.trader_name'])" onmouseout="uhghl(['trader_buys_fk_trader_buys_traders','school project.trader_buys.trader_name','trader_buys_fk_trader_buys_traders','school project.trader_buys.trader_name'])">trader_name</text><title>trader_name
-* varchar(100)</title></a>
-<a xlink:href='#school project.traders.trader_name'><use id='ref' x='1396' y='940' xlink:href='#ref'/><title>Referred by trader_buys ( trader_name ) 
-Referred by trader_buys ( trader_name ) </title></a>
-
-<!-- == Table 'player_buys' == -->
-<rect class='entity' style='stroke:#2A3C4F' x='544' y='1048' width='112' height='112' rx='8' ry='8' />
-<path d='M 544 1076 L 544 1056 Q 544 1048 552 1048 L 648 1048 Q 656 1048 656 1056 L 656 1076 L544 1076 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='544' y='1048' width='112' height='112' rx='8' ry='8' style='fill:none;stroke:#393939'/>
-<a xlink:href='#school project.player_buys'><text x='564' y='1067' >player_buys</text><title>Table school project.player_buys</title></a>
-  <use id='nn' x='546' y='1085' xlink:href='#nn'/><use id='pk' x='546' y='1084' xlink:href='#pk'><title>Pk pk_player_buys_purchase_id ( purchase_id ) </title></use><a xlink:href='#school project.player_buys_purchase_id'><text id='school project.player_buys.purchase_id' x='563' y='1095'>purchase_id</text><title>purchase_id
-* int</title></a>
-<text x='653' y='1092' text-anchor='end' class='colType'>#</text>  <use id='nn' x='546' y='1101' xlink:href='#nn'/><a xlink:href='#school project.player_buys_username'><text id='school project.player_buys.username' x='563' y='1111' onmouseover="hghl(['player_buys_fk_player_buys_player','school project.player.username'])" onmouseout="uhghl(['player_buys_fk_player_buys_player','school project.player.username'])">username</text><title>username
-* varchar(100)</title></a>
-<a xlink:href='#school project.player_buys.username'><use id='fk' x='644' y='1100' xlink:href='#fk'/><title>References player ( username ) </title></a>
-  <use id='nn' x='546' y='1117' xlink:href='#nn'/><a xlink:href='#school project.player_buys_itemurl'><text id='school project.player_buys.itemurl' x='563' y='1127' onmouseover="hghl(['player_buys_fk_player_buys_item','school project.item.url'])" onmouseout="uhghl(['player_buys_fk_player_buys_item','school project.item.url'])">itemurl</text><title>itemurl
-* varchar(100)</title></a>
-<a xlink:href='#school project.player_buys.itemurl'><use id='fk' x='644' y='1116' xlink:href='#fk'/><title>References item ( itemurl -&gt; url ) </title></a>
-  <use id='nn' x='546' y='1133' xlink:href='#nn'/><a xlink:href='#school project.player_buys_amount'><text id='school project.player_buys.amount' x='563' y='1143'>amount</text><title>amount
-* int</title></a>
-<text x='653' y='1140' text-anchor='end' class='colType'>#</text>
-<!-- == Table 'caliber' == -->
-<rect class='entity' style='stroke:#2A3C4F' x='320' y='296' width='112' height='96' rx='8' ry='8' />
-<path d='M 320 324 L 320 304 Q 320 296 328 296 L 424 296 Q 432 296 432 304 L 432 324 L320 324 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='320' y='296' width='112' height='96' rx='8' ry='8' style='fill:none;stroke:#393939'/>
-<a xlink:href='#school project.caliber'><text x='354' y='315' >caliber</text><title>Table school project.caliber</title></a>
-  <use id='nn' x='322' y='333' xlink:href='#nn'/><use id='pk' x='322' y='332' xlink:href='#pk'><title>Pk pk_caliber_item_url ( item_url ) </title></use><a xlink:href='#school project.caliber_item_url'><text id='school project.caliber.item_url' x='339' y='343' onmouseover="hghl(['caliber_fk_caliber_item','school project.item.url','chambers_fk_chambers_caliber','school project.chambers.caliber_url','penetrates_fk_penetrates1','school project.penetrates.caliber_url','penetrates_fk_penetrates1','school project.penetrates.caliber_url'])" onmouseout="uhghl(['caliber_fk_caliber_item','school project.item.url','chambers_fk_chambers_caliber','school project.chambers.caliber_url','penetrates_fk_penetrates1','school project.penetrates.caliber_url','penetrates_fk_penetrates1','school project.penetrates.caliber_url'])">item_url</text><title>item_url
-* varchar(100)</title></a>
-<a xlink:href='#school project.caliber.item_url'><use id='fk' x='420' y='332' xlink:href='#fk'/><title>References item ( item_url -&gt; url ) 
-Referred by chambers ( caliber_url -&gt; item_url ) 
-Referred by penetrates ( caliber_url -&gt; item_url ) 
-Referred by penetrates ( caliber_url -&gt; item_url ) </title></a>
-  <use id='nn' x='322' y='349' xlink:href='#nn'/><a xlink:href='#school project.caliber_damage'><text id='school project.caliber.damage' x='339' y='359'>damage</text><title>damage
-* int default 0</title></a>
-<text x='429' y='356' text-anchor='end' class='colType'>#</text>  <use id='nn' x='322' y='365' xlink:href='#nn'/><a xlink:href='#school project.caliber_penetration'><text id='school project.caliber.penetration' x='339' y='375'>penetration</text><title>penetration
-* int default 0</title></a>
-<text x='429' y='372' text-anchor='end' class='colType'>#</text>
 <!-- == Table 'chambers' == -->
 <rect class='entity' style='stroke:#2A3C4F' x='608' y='200' width='96' height='80' rx='8' ry='8' />
 <path d='M 608 228 L 608 208 Q 608 200 616 200 L 696 200 Q 704 200 704 208 L 704 228 L608 228 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
@@ -581,18 +525,6 @@ Referred by penetrates ( caliber_url -&gt; item_url ) </title></a>
   <use id='nn' x='610' y='253' xlink:href='#nn'/><use id='pk' x='610' y='252' xlink:href='#pk'><title>Pk idx_chambers ( caliber_url, firearm_uid ) </title></use><a xlink:href='#school project.chambers_firearm_uid'><text id='school project.chambers.firearm_uid' x='627' y='263' onmouseover="hghl(['chambers_fk_chambers_firearm','school project.firearm.uid'])" onmouseout="uhghl(['chambers_fk_chambers_firearm','school project.firearm.uid'])">firearm_uid</text><title>firearm_uid
 * int</title></a>
 <a xlink:href='#school project.chambers.firearm_uid'><use id='fk' x='692' y='252' xlink:href='#fk'/><title>References firearm ( firearm_uid -&gt; uid ) </title></a>
-
-<!-- == Table 'attachement_compat' == -->
-<rect class='entity' style='stroke:#2A3C4F' x='1104' y='232' width='176' height='80' rx='8' ry='8' />
-<path d='M 1104 260 L 1104 240 Q 1104 232 1112 232 L 1272 232 Q 1280 232 1280 240 L 1280 260 L1104 260 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='1104' y='232' width='176' height='80' rx='8' ry='8' style='fill:none;stroke:#393939'/>
-<a xlink:href='#school project.attachement_compat'><text x='1130' y='251' >attachement_compat</text><title>Table school project.attachement_compat</title></a>
-  <use id='nn' x='1106' y='269' xlink:href='#nn'/><use id='pk' x='1106' y='268' xlink:href='#pk'><title>Pk idx_attachement_compat ( attachment_url, compatible_attachment ) </title></use><a xlink:href='#school project.attachement_compat_attachment_url'><text id='school project.attachement_compat.attachment_url' x='1123' y='279' onmouseover="hghl(['attachement_compat_fk_attachement_compat','school project.attachment.item_url'])" onmouseout="uhghl(['attachement_compat_fk_attachement_compat','school project.attachment.item_url'])">attachment_url</text><title>attachment_url
-* varchar(100)</title></a>
-<a xlink:href='#school project.attachement_compat.attachment_url'><use id='fk' x='1268' y='268' xlink:href='#fk'/><title>References attachment ( attachment_url -&gt; item_url ) </title></a>
-  <use id='nn' x='1106' y='285' xlink:href='#nn'/><use id='pk' x='1106' y='284' xlink:href='#pk'><title>Pk idx_attachement_compat ( attachment_url, compatible_attachment ) </title></use><a xlink:href='#school project.attachement_compat_compatible_attachment'><text id='school project.attachement_compat.compatible_attachment' x='1123' y='295' onmouseover="hghl(['attachement_compat_fk_attachement_compat1','school project.attachment.item_url'])" onmouseout="uhghl(['attachement_compat_fk_attachement_compat1','school project.attachment.item_url'])">compatible_attachment</text><title>compatible_attachment
-* varchar(100)</title></a>
-<a xlink:href='#school project.attachement_compat.compatible_attachment'><use id='fk' x='1268' y='284' xlink:href='#fk'/><title>References attachment ( compatible_attachment -&gt; item_url ) </title></a>
 
 <!-- == Table 'suppressor' == -->
 <rect class='entity' style='stroke:#2A3E4F' x='832' y='184' width='96' height='96' rx='8' ry='8' />
@@ -609,36 +541,59 @@ Referred by suppressed ( suppressor_url -&gt; item_url ) </title></a>
 <text x='925' y='244' text-anchor='end' class='colType'>#</text>  <use id='nn' x='834' y='253' xlink:href='#nn'/><a xlink:href='#school project.suppressor_ergo_mod'><text id='school project.suppressor.ergo_mod' x='851' y='263'>ergo_mod</text><title>ergo_mod
 * double default 0</title></a>
 <text x='925' y='260' text-anchor='end' class='colType'>#</text>
-<!-- == Table 'attachment' == -->
-<rect class='entity' style='stroke:#2A3C4F' x='1088' y='552' width='96' height='96' rx='8' ry='8' />
-<path d='M 1088 580 L 1088 560 Q 1088 552 1096 552 L 1176 552 Q 1184 552 1184 560 L 1184 580 L1088 580 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='1088' y='552' width='96' height='96' rx='8' ry='8' style='fill:none;stroke:#393939'/>
-<a xlink:href='#school project.attachment'><text x='1101' y='571' >attachment</text><title>Table school project.attachment</title></a>
-  <use id='nn' x='1090' y='589' xlink:href='#nn'/><use id='pk' x='1090' y='588' xlink:href='#pk'><title>Pk pk_attachment_item_url ( item_url ) </title></use><a xlink:href='#school project.attachment_item_url'><text id='school project.attachment.item_url' x='1107' y='599' onmouseover="hghl(['attachment_fk_attachment_item','school project.item.url','attachement_compat_fk_attachement_compat','school project.attachement_compat.attachment_url','attachement_compat_fk_attachement_compat1','school project.attachement_compat.compatible_attachment','attachement_compat_fk_attachement_compat1','school project.attachement_compat.compatible_attachment','fitted_to_fk_fitted_to_attachment','school project.fitted_to.attachment_url','firearm_compat_fk_firearm_compat1','school project.firearm_compat.attachment_url','firearm_compat_fk_firearm_compat1','school project.firearm_compat.attachment_url'])" onmouseout="uhghl(['attachment_fk_attachment_item','school project.item.url','attachement_compat_fk_attachement_compat','school project.attachement_compat.attachment_url','attachement_compat_fk_attachement_compat1','school project.attachement_compat.compatible_attachment','attachement_compat_fk_attachement_compat1','school project.attachement_compat.compatible_attachment','fitted_to_fk_fitted_to_attachment','school project.fitted_to.attachment_url','firearm_compat_fk_firearm_compat1','school project.firearm_compat.attachment_url','firearm_compat_fk_firearm_compat1','school project.firearm_compat.attachment_url'])">item_url</text><title>item_url
+<!-- == Table 'attachement_compat' == -->
+<rect class='entity' style='stroke:#2A3C4F' x='1104' y='232' width='176' height='80' rx='8' ry='8' />
+<path d='M 1104 260 L 1104 240 Q 1104 232 1112 232 L 1272 232 Q 1280 232 1280 240 L 1280 260 L1104 260 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
+<rect class='entity' x='1104' y='232' width='176' height='80' rx='8' ry='8' style='fill:none;stroke:#393939'/>
+<a xlink:href='#school project.attachement_compat'><text x='1130' y='251' >attachement_compat</text><title>Table school project.attachement_compat</title></a>
+  <use id='nn' x='1106' y='269' xlink:href='#nn'/><use id='pk' x='1106' y='268' xlink:href='#pk'><title>Pk idx_attachement_compat ( attachment_url, compatible_attachment ) </title></use><a xlink:href='#school project.attachement_compat_attachment_url'><text id='school project.attachement_compat.attachment_url' x='1123' y='279' onmouseover="hghl(['attachement_compat_fk_attachement_compat','school project.attachment.item_url'])" onmouseout="uhghl(['attachement_compat_fk_attachement_compat','school project.attachment.item_url'])">attachment_url</text><title>attachment_url
 * varchar(100)</title></a>
-<a xlink:href='#school project.attachment.item_url'><use id='fk' x='1172' y='588' xlink:href='#fk'/><title>References item ( item_url -&gt; url ) 
-Referred by attachement_compat ( attachment_url -&gt; item_url ) 
-Referred by attachement_compat ( compatible_attachment -&gt; item_url ) 
-Referred by attachement_compat ( compatible_attachment -&gt; item_url ) 
-Referred by fitted_to ( attachment_url -&gt; item_url ) 
-Referred by firearm_compat ( attachment_url -&gt; item_url ) 
-Referred by firearm_compat ( attachment_url -&gt; item_url ) </title></a>
-  <use id='nn' x='1090' y='605' xlink:href='#nn'/><a xlink:href='#school project.attachment_recoil_mod'><text id='school project.attachment.recoil_mod' x='1107' y='615'>recoil_mod</text><title>recoil_mod
-* double default 0</title></a>
-<text x='1181' y='612' text-anchor='end' class='colType'>#</text>  <use id='nn' x='1090' y='621' xlink:href='#nn'/><a xlink:href='#school project.attachment_ergo_mod'><text id='school project.attachment.ergo_mod' x='1107' y='631'>ergo_mod</text><title>ergo_mod
-* double default 0</title></a>
-<text x='1181' y='628' text-anchor='end' class='colType'>#</text>
-<!-- == Table 'fitted_to' == -->
-<rect class='entity' style='stroke:#2A3C4F' x='816' y='552' width='128' height='80' rx='8' ry='8' />
-<path d='M 816 580 L 816 560 Q 816 552 824 552 L 936 552 Q 944 552 944 560 L 944 580 L816 580 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='816' y='552' width='128' height='80' rx='8' ry='8' style='fill:none;stroke:#393939'/>
-<a xlink:href='#school project.fitted_to'><text x='853' y='571' >fitted_to</text><title>Table school project.fitted_to</title></a>
-  <use id='nn' x='818' y='589' xlink:href='#nn'/><use id='pk' x='818' y='588' xlink:href='#pk'><title>Pk idx_fitted_to ( firearm_uid, attachment_url ) </title></use><a xlink:href='#school project.fitted_to_firearm_uid'><text id='school project.fitted_to.firearm_uid' x='835' y='599' onmouseover="hghl(['fitted_to_fk_fitted_to_firearm','school project.firearm.uid'])" onmouseout="uhghl(['fitted_to_fk_fitted_to_firearm','school project.firearm.uid'])">firearm_uid</text><title>firearm_uid
+<a xlink:href='#school project.attachement_compat.attachment_url'><use id='fk' x='1268' y='268' xlink:href='#fk'/><title>References attachment ( attachment_url -&gt; item_url ) </title></a>
+  <use id='nn' x='1106' y='285' xlink:href='#nn'/><use id='pk' x='1106' y='284' xlink:href='#pk'><title>Pk idx_attachement_compat ( attachment_url, compatible_attachment ) </title></use><a xlink:href='#school project.attachement_compat_compatible_attachment'><text id='school project.attachement_compat.compatible_attachment' x='1123' y='295' onmouseover="hghl(['attachement_compat_fk_attachement_compat1','school project.attachment.item_url'])" onmouseout="uhghl(['attachement_compat_fk_attachement_compat1','school project.attachment.item_url'])">compatible_attachment</text><title>compatible_attachment
+* varchar(100)</title></a>
+<a xlink:href='#school project.attachement_compat.compatible_attachment'><use id='fk' x='1268' y='284' xlink:href='#fk'/><title>References attachment ( compatible_attachment -&gt; item_url ) </title></a>
+
+<!-- == Table 'caliber' == -->
+<rect class='entity' style='stroke:#2A3C4F' x='320' y='296' width='112' height='96' rx='8' ry='8' />
+<path d='M 320 324 L 320 304 Q 320 296 328 296 L 424 296 Q 432 296 432 304 L 432 324 L320 324 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
+<rect class='entity' x='320' y='296' width='112' height='96' rx='8' ry='8' style='fill:none;stroke:#393939'/>
+<a xlink:href='#school project.caliber'><text x='354' y='315' >caliber</text><title>Table school project.caliber</title></a>
+  <use id='nn' x='322' y='333' xlink:href='#nn'/><use id='pk' x='322' y='332' xlink:href='#pk'><title>Pk pk_caliber_item_url ( item_url ) </title></use><a xlink:href='#school project.caliber_item_url'><text id='school project.caliber.item_url' x='339' y='343' onmouseover="hghl(['caliber_fk_caliber_item','school project.item.url','chambers_fk_chambers_caliber','school project.chambers.caliber_url','penetrates_fk_penetrates1','school project.penetrates.caliber_url','chambers_fk_chambers_caliber','school project.chambers.caliber_url','penetrates_fk_penetrates1','school project.penetrates.caliber_url'])" onmouseout="uhghl(['caliber_fk_caliber_item','school project.item.url','chambers_fk_chambers_caliber','school project.chambers.caliber_url','penetrates_fk_penetrates1','school project.penetrates.caliber_url','chambers_fk_chambers_caliber','school project.chambers.caliber_url','penetrates_fk_penetrates1','school project.penetrates.caliber_url'])">item_url</text><title>item_url
+* varchar(100)</title></a>
+<a xlink:href='#school project.caliber.item_url'><use id='fk' x='420' y='332' xlink:href='#fk'/><title>References item ( item_url -&gt; url ) 
+Referred by chambers ( caliber_url -&gt; item_url ) 
+Referred by penetrates ( caliber_url -&gt; item_url ) 
+Referred by chambers ( caliber_url -&gt; item_url ) 
+Referred by penetrates ( caliber_url -&gt; item_url ) </title></a>
+  <use id='nn' x='322' y='349' xlink:href='#nn'/><a xlink:href='#school project.caliber_damage'><text id='school project.caliber.damage' x='339' y='359'>damage</text><title>damage
+* int default 0</title></a>
+<text x='429' y='356' text-anchor='end' class='colType'>#</text>  <use id='nn' x='322' y='365' xlink:href='#nn'/><a xlink:href='#school project.caliber_penetration'><text id='school project.caliber.penetration' x='339' y='375'>penetration</text><title>penetration
+* int default 0</title></a>
+<text x='429' y='372' text-anchor='end' class='colType'>#</text>
+<!-- == Table 'firearm_compat' == -->
+<rect class='entity' style='stroke:#2A3E4F' x='1136' y='328' width='144' height='80' rx='8' ry='8' />
+<path d='M 1136 356 L 1136 336 Q 1136 328 1144 328 L 1272 328 Q 1280 328 1280 336 L 1280 356 L1136 356 ' style='fill:url(#tbg_3986C1);stroke:1;stroke-opacity:0.1;' />
+<rect class='entity' x='1136' y='328' width='144' height='80' rx='8' ry='8' style='fill:none;stroke:#393939'/>
+<a xlink:href='#school project.firearm_compat'><text x='1161' y='347' >firearm_compat</text><title>Table school project.firearm_compat</title></a>
+  <use id='nn' x='1138' y='365' xlink:href='#nn'/><use id='pk' x='1138' y='364' xlink:href='#pk'><title>Pk idx_attachement_compat_0 ( attachment_url, compatible_firearm ) </title></use><a xlink:href='#school project.firearm_compat_attachment_url'><text id='school project.firearm_compat.attachment_url' x='1155' y='375' onmouseover="hghl(['firearm_compat_fk_firearm_compat1','school project.attachment.item_url'])" onmouseout="uhghl(['firearm_compat_fk_firearm_compat1','school project.attachment.item_url'])">attachment_url</text><title>attachment_url
+* varchar(100)</title></a>
+<a xlink:href='#school project.firearm_compat.attachment_url'><use id='fk' x='1268' y='364' xlink:href='#fk'/><title>References attachment ( attachment_url -&gt; item_url ) </title></a>
+  <use id='nn' x='1138' y='381' xlink:href='#nn'/><use id='pk' x='1138' y='380' xlink:href='#pk'><title>Pk idx_attachement_compat_0 ( attachment_url, compatible_firearm ) </title></use><a xlink:href='#school project.firearm_compat_compatible_firearm'><text id='school project.firearm_compat.compatible_firearm' x='1155' y='391' onmouseover="hghl(['firearm_compat_fk_attachement_compat_0','school project.firearm.uid'])" onmouseout="uhghl(['firearm_compat_fk_attachement_compat_0','school project.firearm.uid'])">compatible_firearm</text><title>compatible_firearm
 * int</title></a>
-<a xlink:href='#school project.fitted_to.firearm_uid'><use id='fk' x='932' y='588' xlink:href='#fk'/><title>References firearm ( firearm_uid -&gt; uid ) </title></a>
-  <use id='nn' x='818' y='605' xlink:href='#nn'/><use id='pk' x='818' y='604' xlink:href='#pk'><title>Pk idx_fitted_to ( firearm_uid, attachment_url ) </title></use><a xlink:href='#school project.fitted_to_attachment_url'><text id='school project.fitted_to.attachment_url' x='835' y='615' onmouseover="hghl(['fitted_to_fk_fitted_to_attachment','school project.attachment.item_url'])" onmouseout="uhghl(['fitted_to_fk_fitted_to_attachment','school project.attachment.item_url'])">attachment_url</text><title>attachment_url
+<a xlink:href='#school project.firearm_compat.compatible_firearm'><use id='fk' x='1268' y='380' xlink:href='#fk'/><title>References firearm ( compatible_firearm -&gt; uid ) </title></a>
+
+<!-- == Table 'suppressed' == -->
+<rect class='entity' style='stroke:#2A3C4F' x='720' y='376' width='128' height='80' rx='8' ry='8' />
+<path d='M 720 404 L 720 384 Q 720 376 728 376 L 840 376 Q 848 376 848 384 L 848 404 L720 404 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
+<rect class='entity' x='720' y='376' width='128' height='80' rx='8' ry='8' style='fill:none;stroke:#393939'/>
+<a xlink:href='#school project.suppressed'><text x='749' y='395' >suppressed</text><title>Table school project.suppressed
+This table stores whether or not a weapon is suppressed and if it is what suppressor is attached to it. Something that isnt suppressed will not be included in here.</title></a>
+  <use id='nn' x='722' y='413' xlink:href='#nn'/><a xlink:href='#school project.suppressed_suppressor_url'><text id='school project.suppressed.suppressor_url' x='739' y='423' onmouseover="hghl(['suppressed_fk_suppressed_suppressed','school project.suppressor.item_url'])" onmouseout="uhghl(['suppressed_fk_suppressed_suppressed','school project.suppressor.item_url'])">suppressor_url</text><title>suppressor_url
 * varchar(100)</title></a>
-<a xlink:href='#school project.fitted_to.attachment_url'><use id='fk' x='932' y='604' xlink:href='#fk'/><title>References attachment ( attachment_url -&gt; item_url ) </title></a>
+<a xlink:href='#school project.suppressed.suppressor_url'><use id='fk' x='836' y='412' xlink:href='#fk'/><title>References suppressor ( suppressor_url -&gt; item_url ) </title></a>
+  <use id='nn' x='722' y='429' xlink:href='#nn'/><use id='pk' x='722' y='428' xlink:href='#pk'><title>Pk idx_suppressed ( firearm_uid ) </title></use><a xlink:href='#school project.suppressed_firearm_uid'><text id='school project.suppressed.firearm_uid' x='739' y='439' onmouseover="hghl(['suppressed_fk_suppressed_firearm','school project.firearm.uid'])" onmouseout="uhghl(['suppressed_fk_suppressed_firearm','school project.firearm.uid'])">firearm_uid</text><title>firearm_uid
+* int</title></a>
+<a xlink:href='#school project.suppressed.firearm_uid'><use id='fk' x='836' y='428' xlink:href='#fk'/><title>References firearm ( firearm_uid -&gt; uid ) </title></a>
 
 <!-- == Table 'penetrates' == -->
 <rect class='entity' style='stroke:#2A3C4F' x='240' y='424' width='112' height='80' rx='8' ry='8' />
@@ -652,28 +607,195 @@ Referred by firearm_compat ( attachment_url -&gt; item_url ) </title></a>
 * int default 0</title></a>
 <a xlink:href='#school project.penetrates.armor_class'><use id='fk' x='340' y='476' xlink:href='#fk'/><title>References armor ( armor_class -&gt; class ) </title></a>
 
+<!-- == Table 'firearm' == -->
+<rect class='entity' style='stroke:#2A3C4F' x='544' y='520' width='112' height='128' rx='8' ry='8' />
+<path d='M 544 548 L 544 528 Q 544 520 552 520 L 648 520 Q 656 520 656 528 L 656 548 L544 548 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
+<rect class='entity' x='544' y='520' width='112' height='128' rx='8' ry='8' style='fill:none;stroke:#393939'/>
+<a xlink:href='#school project.firearm'><text x='576' y='539' >firearm</text><title>Table school project.firearm</title></a>
+  <use id='nn' x='546' y='557' xlink:href='#nn'/><use id='pk' x='546' y='556' xlink:href='#pk'><title>Pk pk_firearm_uid ( uid ) </title></use><a xlink:href='#school project.firearm_uid'><text id='school project.firearm.uid' x='563' y='567' onmouseover="hghl(['chambers_fk_chambers_firearm','school project.chambers.firearm_uid','firearm_compat_fk_attachement_compat_0','school project.firearm_compat.compatible_firearm','fitted_to_fk_fitted_to_firearm','school project.fitted_to.firearm_uid','suppressed_fk_suppressed_firearm','school project.suppressed.firearm_uid','chambers_fk_chambers_firearm','school project.chambers.firearm_uid','firearm_compat_fk_attachement_compat_0','school project.firearm_compat.compatible_firearm','suppressed_fk_suppressed_firearm','school project.suppressed.firearm_uid','fitted_to_fk_fitted_to_firearm','school project.fitted_to.firearm_uid'])" onmouseout="uhghl(['chambers_fk_chambers_firearm','school project.chambers.firearm_uid','firearm_compat_fk_attachement_compat_0','school project.firearm_compat.compatible_firearm','fitted_to_fk_fitted_to_firearm','school project.fitted_to.firearm_uid','suppressed_fk_suppressed_firearm','school project.suppressed.firearm_uid','chambers_fk_chambers_firearm','school project.chambers.firearm_uid','firearm_compat_fk_attachement_compat_0','school project.firearm_compat.compatible_firearm','suppressed_fk_suppressed_firearm','school project.suppressed.firearm_uid','fitted_to_fk_fitted_to_firearm','school project.fitted_to.firearm_uid'])">uid</text><title>uid
+* int</title></a>
+<a xlink:href='#school project.firearm.uid'><use id='ref' x='644' y='556' xlink:href='#ref'/><title>Referred by chambers ( firearm_uid -&gt; uid ) 
+Referred by firearm_compat ( compatible_firearm -&gt; uid ) 
+Referred by fitted_to ( firearm_uid -&gt; uid ) 
+Referred by suppressed ( firearm_uid -&gt; uid ) 
+Referred by chambers ( firearm_uid -&gt; uid ) 
+Referred by firearm_compat ( compatible_firearm -&gt; uid ) 
+Referred by suppressed ( firearm_uid -&gt; uid ) 
+Referred by fitted_to ( firearm_uid -&gt; uid ) </title></a>
+  <use id='nn' x='546' y='573' xlink:href='#nn'/><a xlink:href='#school project.firearm_recoil'><text id='school project.firearm.recoil' x='563' y='583'>recoil</text><title>recoil
+* double default 0
+This is an attribute derived from the weapon_url's base recoil value and the recoil modifiers from any attachments fitted onto it. Note that recoil modifiers are handled as percentage values when calculating recoil. So a forgrip might have a recoil mod of -5 so you would multiply the base value of the weapon by .95 to get its adjusted value.</title></a>
+<text x='653' y='580' text-anchor='end' class='colType'>#</text>  <use id='nn' x='546' y='589' xlink:href='#nn'/><a xlink:href='#school project.firearm_ergonomics'><text id='school project.firearm.ergonomics' x='563' y='599'>ergonomics</text><title>ergonomics
+* double default 0
+This is an attribute derived from the weapon_url's base ergo value and the ergo modifiers from any attachments fitted onto it.</title></a>
+<text x='653' y='596' text-anchor='end' class='colType'>#</text>  <use id='nn' x='546' y='605' xlink:href='#nn'/><a xlink:href='#school project.firearm_type'><text id='school project.firearm.type' x='563' y='615'>type</text><title>type
+* varchar(100)</title></a>
+<text x='653' y='612' text-anchor='end' class='colType'>t</text>  <use id='nn' x='546' y='621' xlink:href='#nn'/><a xlink:href='#school project.firearm_item_url'><text id='school project.firearm.item_url' x='563' y='631' onmouseover="hghl(['firearm_fk_firearm_item','school project.item.url'])" onmouseout="uhghl(['firearm_fk_firearm_item','school project.item.url'])">item_url</text><title>item_url
+* varchar(100)</title></a>
+<a xlink:href='#school project.firearm.item_url'><use id='fk' x='644' y='620' xlink:href='#fk'/><title>References item ( item_url -&gt; url ) </title></a>
+
+<!-- == Table 'fitted_to' == -->
+<rect class='entity' style='stroke:#2A3C4F' x='816' y='552' width='128' height='80' rx='8' ry='8' />
+<path d='M 816 580 L 816 560 Q 816 552 824 552 L 936 552 Q 944 552 944 560 L 944 580 L816 580 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
+<rect class='entity' x='816' y='552' width='128' height='80' rx='8' ry='8' style='fill:none;stroke:#393939'/>
+<a xlink:href='#school project.fitted_to'><text x='853' y='571' >fitted_to</text><title>Table school project.fitted_to</title></a>
+  <use id='nn' x='818' y='589' xlink:href='#nn'/><use id='pk' x='818' y='588' xlink:href='#pk'><title>Pk idx_fitted_to ( firearm_uid, attachment_url ) </title></use><a xlink:href='#school project.fitted_to_firearm_uid'><text id='school project.fitted_to.firearm_uid' x='835' y='599' onmouseover="hghl(['fitted_to_fk_fitted_to_firearm','school project.firearm.uid'])" onmouseout="uhghl(['fitted_to_fk_fitted_to_firearm','school project.firearm.uid'])">firearm_uid</text><title>firearm_uid
+* int</title></a>
+<a xlink:href='#school project.fitted_to.firearm_uid'><use id='fk' x='932' y='588' xlink:href='#fk'/><title>References firearm ( firearm_uid -&gt; uid ) </title></a>
+  <use id='nn' x='818' y='605' xlink:href='#nn'/><use id='pk' x='818' y='604' xlink:href='#pk'><title>Pk idx_fitted_to ( firearm_uid, attachment_url ) </title></use><a xlink:href='#school project.fitted_to_attachment_url'><text id='school project.fitted_to.attachment_url' x='835' y='615' onmouseover="hghl(['fitted_to_fk_fitted_to_attachment','school project.attachment.item_url'])" onmouseout="uhghl(['fitted_to_fk_fitted_to_attachment','school project.attachment.item_url'])">attachment_url</text><title>attachment_url
+* varchar(100)</title></a>
+<a xlink:href='#school project.fitted_to.attachment_url'><use id='fk' x='932' y='604' xlink:href='#fk'/><title>References attachment ( attachment_url -&gt; item_url ) </title></a>
+
+<!-- == Table 'attachment' == -->
+<rect class='entity' style='stroke:#2A3C4F' x='1088' y='552' width='96' height='96' rx='8' ry='8' />
+<path d='M 1088 580 L 1088 560 Q 1088 552 1096 552 L 1176 552 Q 1184 552 1184 560 L 1184 580 L1088 580 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
+<rect class='entity' x='1088' y='552' width='96' height='96' rx='8' ry='8' style='fill:none;stroke:#393939'/>
+<a xlink:href='#school project.attachment'><text x='1101' y='571' >attachment</text><title>Table school project.attachment</title></a>
+  <use id='nn' x='1090' y='589' xlink:href='#nn'/><use id='pk' x='1090' y='588' xlink:href='#pk'><title>Pk pk_attachment_item_url ( item_url ) </title></use><a xlink:href='#school project.attachment_item_url'><text id='school project.attachment.item_url' x='1107' y='599' onmouseover="hghl(['attachment_fk_attachment_item','school project.item.url','attachement_compat_fk_attachement_compat','school project.attachement_compat.attachment_url','attachement_compat_fk_attachement_compat1','school project.attachement_compat.compatible_attachment','firearm_compat_fk_firearm_compat1','school project.firearm_compat.attachment_url','fitted_to_fk_fitted_to_attachment','school project.fitted_to.attachment_url','attachement_compat_fk_attachement_compat','school project.attachement_compat.attachment_url','attachement_compat_fk_attachement_compat1','school project.attachement_compat.compatible_attachment','firearm_compat_fk_firearm_compat1','school project.firearm_compat.attachment_url','fitted_to_fk_fitted_to_attachment','school project.fitted_to.attachment_url'])" onmouseout="uhghl(['attachment_fk_attachment_item','school project.item.url','attachement_compat_fk_attachement_compat','school project.attachement_compat.attachment_url','attachement_compat_fk_attachement_compat1','school project.attachement_compat.compatible_attachment','firearm_compat_fk_firearm_compat1','school project.firearm_compat.attachment_url','fitted_to_fk_fitted_to_attachment','school project.fitted_to.attachment_url','attachement_compat_fk_attachement_compat','school project.attachement_compat.attachment_url','attachement_compat_fk_attachement_compat1','school project.attachement_compat.compatible_attachment','firearm_compat_fk_firearm_compat1','school project.firearm_compat.attachment_url','fitted_to_fk_fitted_to_attachment','school project.fitted_to.attachment_url'])">item_url</text><title>item_url
+* varchar(100)</title></a>
+<a xlink:href='#school project.attachment.item_url'><use id='fk' x='1172' y='588' xlink:href='#fk'/><title>References item ( item_url -&gt; url ) 
+Referred by attachement_compat ( attachment_url -&gt; item_url ) 
+Referred by attachement_compat ( compatible_attachment -&gt; item_url ) 
+Referred by firearm_compat ( attachment_url -&gt; item_url ) 
+Referred by fitted_to ( attachment_url -&gt; item_url ) 
+Referred by attachement_compat ( attachment_url -&gt; item_url ) 
+Referred by attachement_compat ( compatible_attachment -&gt; item_url ) 
+Referred by firearm_compat ( attachment_url -&gt; item_url ) 
+Referred by fitted_to ( attachment_url -&gt; item_url ) </title></a>
+  <use id='nn' x='1090' y='605' xlink:href='#nn'/><a xlink:href='#school project.attachment_recoil_mod'><text id='school project.attachment.recoil_mod' x='1107' y='615'>recoil_mod</text><title>recoil_mod
+* double default 0</title></a>
+<text x='1181' y='612' text-anchor='end' class='colType'>#</text>  <use id='nn' x='1090' y='621' xlink:href='#nn'/><a xlink:href='#school project.attachment_ergo_mod'><text id='school project.attachment.ergo_mod' x='1107' y='631'>ergo_mod</text><title>ergo_mod
+* double default 0</title></a>
+<text x='1181' y='628' text-anchor='end' class='colType'>#</text>
+<!-- == Table 'armor' == -->
+<rect class='entity' style='stroke:#2A3C4F' x='224' y='552' width='80' height='96' rx='8' ry='8' />
+<path d='M 224 580 L 224 560 Q 224 552 232 552 L 296 552 Q 304 552 304 560 L 304 580 L224 580 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
+<rect class='entity' x='224' y='552' width='80' height='96' rx='8' ry='8' style='fill:none;stroke:#393939'/>
+<a xlink:href='#school project.armor'><text x='243' y='571' >armor</text><title>Table school project.armor</title></a>
+  <use id='nn' x='226' y='589' xlink:href='#nn'/><use id='pk' x='226' y='588' xlink:href='#pk'><title>Pk idx_armor ( zone, item_url ) </title></use><a xlink:href='#school project.armor_zone'><text id='school project.armor.zone' x='243' y='599'>zone</text><title>zone
+* varchar(100)</title></a>
+<text x='301' y='596' text-anchor='end' class='colType'>t</text>  <use id='nn' x='226' y='605' xlink:href='#nn'/><use id='pk' x='226' y='604' xlink:href='#pk'><title>Pk idx_armor ( zone, item_url ) </title></use><a xlink:href='#school project.armor_item_url'><text id='school project.armor.item_url' x='243' y='615' onmouseover="hghl(['armor_fk_armor_item','school project.item.url'])" onmouseout="uhghl(['armor_fk_armor_item','school project.item.url'])">item_url</text><title>item_url
+* varchar(100)</title></a>
+<a xlink:href='#school project.armor.item_url'><use id='fk' x='292' y='604' xlink:href='#fk'/><title>References item ( item_url -&gt; url ) </title></a>
+  <use id='nn' x='226' y='621' xlink:href='#nn'/><use id='unq' x='226' y='620' xlink:href='#unq'><title>Unq unq_armor_class ( class ) </title></use><a xlink:href='#school project.armor_class'><text id='school project.armor.class' x='243' y='631' onmouseover="hghl(['penetrates_fk_penetrates_armor','school project.penetrates.armor_class','penetrates_fk_penetrates_armor','school project.penetrates.armor_class'])" onmouseout="uhghl(['penetrates_fk_penetrates_armor','school project.penetrates.armor_class','penetrates_fk_penetrates_armor','school project.penetrates.armor_class'])">class</text><title>class
+* int default 0</title></a>
+<a xlink:href='#school project.armor.class'><use id='ref' x='292' y='620' xlink:href='#ref'/><title>Referred by penetrates ( armor_class -&gt; class ) 
+Referred by penetrates ( armor_class -&gt; class ) </title></a>
+
+<!-- == Table 'trade' == -->
+<rect class='entity' style='stroke:#2A3C4F' x='48' y='808' width='96' height='128' rx='8' ry='8' />
+<path d='M 48 836 L 48 816 Q 48 808 56 808 L 136 808 Q 144 808 144 816 L 144 836 L48 836 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
+<rect class='entity' x='48' y='808' width='96' height='128' rx='8' ry='8' style='fill:none;stroke:#393939'/>
+<a xlink:href='#school project.trade'><text x='78' y='827' >trade</text><title>Table school project.trade</title></a>
+  <use id='nn' x='50' y='845' xlink:href='#nn'/><use id='pk' x='50' y='844' xlink:href='#pk'><title>Pk pk_trade_trade_uid ( trade_uid ) </title></use><a xlink:href='#school project.trade_trade_uid'><text id='school project.trade.trade_uid' x='67' y='855'>trade_uid</text><title>trade_uid
+* int</title></a>
+<text x='141' y='852' text-anchor='end' class='colType'>#</text>  <use id='nn' x='50' y='861' xlink:href='#nn'/><a xlink:href='#school project.trade_item_url'><text id='school project.trade.item_url' x='67' y='871'>item_url</text><title>item_url
+* varchar(100)</title></a>
+<text x='141' y='868' text-anchor='end' class='colType'>t</text>  <use id='nn' x='50' y='877' xlink:href='#nn'/><a xlink:href='#school project.trade_cost'><text id='school project.trade.cost' x='67' y='887'>cost</text><title>cost
+* int</title></a>
+<text x='141' y='884' text-anchor='end' class='colType'>#</text>  <use id='nn' x='50' y='893' xlink:href='#nn'/><a xlink:href='#school project.trade_seller'><text id='school project.trade.seller' x='67' y='903' onmouseover="hghl(['trade_fk_trade_seller','school project.player.username'])" onmouseout="uhghl(['trade_fk_trade_seller','school project.player.username'])">seller</text><title>seller
+* varchar(100)</title></a>
+<a xlink:href='#school project.trade.seller'><use id='fk' x='132' y='892' xlink:href='#fk'/><title>References player ( seller -&gt; username ) </title></a>
+  <use id='nn' x='50' y='909' xlink:href='#nn'/><a xlink:href='#school project.trade_buyer'><text id='school project.trade.buyer' x='67' y='919' onmouseover="hghl(['trade_fk_trade_buyer','school project.player.username'])" onmouseout="uhghl(['trade_fk_trade_buyer','school project.player.username'])">buyer</text><title>buyer
+* varchar(100)</title></a>
+<a xlink:href='#school project.trade.buyer'><use id='fk' x='132' y='908' xlink:href='#fk'/><title>References player ( buyer -&gt; username ) </title></a>
+
+<!-- == Table 'player' == -->
+<rect class='entity' style='stroke:#2A3C4F' x='256' y='824' width='96' height='96' rx='8' ry='8' />
+<path d='M 256 852 L 256 832 Q 256 824 264 824 L 344 824 Q 352 824 352 832 L 352 852 L256 852 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
+<rect class='entity' x='256' y='824' width='96' height='96' rx='8' ry='8' style='fill:none;stroke:#393939'/>
+<a xlink:href='#school project.player'><text x='283' y='843' >player</text><title>Table school project.player</title></a>
+  <use id='nn' x='258' y='861' xlink:href='#nn'/><use id='pk' x='258' y='860' xlink:href='#pk'><title>Unq unq_player_username ( username ) Pk pk_player_username ( username ) </title></use><a xlink:href='#school project.player_username'><text id='school project.player.username' x='275' y='871' onmouseover="hghl(['owns_fk_owns_player','school project.owns.player_name','player_buys_fk_player_buys_player','school project.player_buys.username','player_sells_fk_player_buys_player_0','school project.player_sells.username','trade_fk_trade_seller','school project.trade.seller','trade_fk_trade_buyer','school project.trade.buyer','trade_fk_trade_buyer','school project.trade.buyer','trade_fk_trade_seller','school project.trade.seller','owns_fk_owns_player','school project.owns.player_name','player_sells_fk_player_buys_player_0','school project.player_sells.username','player_buys_fk_player_buys_player','school project.player_buys.username'])" onmouseout="uhghl(['owns_fk_owns_player','school project.owns.player_name','player_buys_fk_player_buys_player','school project.player_buys.username','player_sells_fk_player_buys_player_0','school project.player_sells.username','trade_fk_trade_seller','school project.trade.seller','trade_fk_trade_buyer','school project.trade.buyer','trade_fk_trade_buyer','school project.trade.buyer','trade_fk_trade_seller','school project.trade.seller','owns_fk_owns_player','school project.owns.player_name','player_sells_fk_player_buys_player_0','school project.player_sells.username','player_buys_fk_player_buys_player','school project.player_buys.username'])">username</text><title>username
+* varchar(100)</title></a>
+<a xlink:href='#school project.player.username'><use id='ref' x='340' y='860' xlink:href='#ref'/><title>Referred by owns ( player_name -&gt; username ) 
+Referred by player_buys ( username ) 
+Referred by player_sells ( username ) 
+Referred by trade ( seller -&gt; username ) 
+Referred by trade ( buyer -&gt; username ) 
+Referred by trade ( buyer -&gt; username ) 
+Referred by trade ( seller -&gt; username ) 
+Referred by owns ( player_name -&gt; username ) 
+Referred by player_sells ( username ) 
+Referred by player_buys ( username ) </title></a>
+  <use id='nn' x='258' y='877' xlink:href='#nn'/><a xlink:href='#school project.player_level'><text id='school project.player.level' x='275' y='887'>level</text><title>level
+* int</title></a>
+<text x='349' y='884' text-anchor='end' class='colType'>#</text>  <use id='nn' x='258' y='893' xlink:href='#nn'/><a xlink:href='#school project.player_money'><text id='school project.player.money' x='275' y='903'>money</text><title>money
+* int</title></a>
+<text x='349' y='900' text-anchor='end' class='colType'>#</text>
+<!-- == Table 'owns' == -->
+<rect class='entity' style='stroke:#2A3C4F' x='544' y='760' width='112' height='96' rx='8' ry='8' />
+<path d='M 544 788 L 544 768 Q 544 760 552 760 L 648 760 Q 656 760 656 768 L 656 788 L544 788 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
+<rect class='entity' x='544' y='760' width='112' height='96' rx='8' ry='8' style='fill:none;stroke:#393939'/>
+<a xlink:href='#school project.owns'><text x='582' y='779' >owns</text><title>Table school project.owns</title></a>
+  <use id='nn' x='546' y='797' xlink:href='#nn'/><use id='pk' x='546' y='796' xlink:href='#pk'><title>Pk test ( player_name, item_url ) </title></use><a xlink:href='#school project.owns_player_name'><text id='school project.owns.player_name' x='563' y='807' onmouseover="hghl(['owns_fk_owns_player','school project.player.username'])" onmouseout="uhghl(['owns_fk_owns_player','school project.player.username'])">player_name</text><title>player_name
+* varchar(100)</title></a>
+<a xlink:href='#school project.owns.player_name'><use id='fk' x='644' y='796' xlink:href='#fk'/><title>References player ( player_name -&gt; username ) </title></a>
+  <use id='nn' x='546' y='813' xlink:href='#nn'/><a xlink:href='#school project.owns_amount'><text id='school project.owns.amount' x='563' y='823'>amount</text><title>amount
+* int</title></a>
+<text x='653' y='820' text-anchor='end' class='colType'>#</text>  <use id='nn' x='546' y='829' xlink:href='#nn'/><use id='pk' x='546' y='828' xlink:href='#pk'><title>Pk test ( player_name, item_url ) </title></use><a xlink:href='#school project.owns_item_url'><text id='school project.owns.item_url' x='563' y='839' onmouseover="hghl(['owns_fk_owns_item','school project.item.url'])" onmouseout="uhghl(['owns_fk_owns_item','school project.item.url'])">item_url</text><title>item_url
+* longtext</title></a>
+<a xlink:href='#school project.owns.item_url'><use id='fk' x='644' y='828' xlink:href='#fk'/><title>References item ( item_url -&gt; url ) </title></a>
+
+<!-- == Table 'player_sells' == -->
+<rect class='entity' style='stroke:#2A3E4F' x='448' y='872' width='96' height='112' rx='8' ry='8' />
+<path d='M 448 900 L 448 880 Q 448 872 456 872 L 536 872 Q 544 872 544 880 L 544 900 L448 900 ' style='fill:url(#tbg_3986C1);stroke:1;stroke-opacity:0.1;' />
+<rect class='entity' x='448' y='872' width='96' height='112' rx='8' ry='8' style='fill:none;stroke:#393939'/>
+<a xlink:href='#school project.player_sells'><text x='461' y='891' >player_sells</text><title>Table school project.player_sells</title></a>
+  <use id='nn' x='450' y='909' xlink:href='#nn'/><use id='pk' x='450' y='908' xlink:href='#pk'><title>Pk pk_player_buys_purchase_id_0 ( sell_id ) </title></use><a xlink:href='#school project.player_sells_sell_id'><text id='school project.player_sells.sell_id' x='467' y='919'>sell_id</text><title>sell_id
+* int</title></a>
+<text x='541' y='916' text-anchor='end' class='colType'>#</text>  <use id='nn' x='450' y='925' xlink:href='#nn'/><a xlink:href='#school project.player_sells_username'><text id='school project.player_sells.username' x='467' y='935' onmouseover="hghl(['player_sells_fk_player_buys_player_0','school project.player.username'])" onmouseout="uhghl(['player_sells_fk_player_buys_player_0','school project.player.username'])">username</text><title>username
+* varchar(100)</title></a>
+<a xlink:href='#school project.player_sells.username'><use id='fk' x='532' y='924' xlink:href='#fk'/><title>References player ( username ) </title></a>
+  <use id='nn' x='450' y='941' xlink:href='#nn'/><a xlink:href='#school project.player_sells_item_url'><text id='school project.player_sells.item_url' x='467' y='951' onmouseover="hghl(['player_sells_fk_player_buys_item_0','school project.item.url'])" onmouseout="uhghl(['player_sells_fk_player_buys_item_0','school project.item.url'])">item_url</text><title>item_url
+* varchar(100)</title></a>
+<a xlink:href='#school project.player_sells.item_url'><use id='fk' x='532' y='940' xlink:href='#fk'/><title>References item ( item_url -&gt; url ) </title></a>
+  <use id='nn' x='450' y='957' xlink:href='#nn'/><a xlink:href='#school project.player_sells_amount'><text id='school project.player_sells.amount' x='467' y='967'>amount</text><title>amount
+* int</title></a>
+<text x='541' y='964' text-anchor='end' class='colType'>#</text>
+<!-- == Table 'player_buys' == -->
+<rect class='entity' style='stroke:#2A3C4F' x='544' y='1048' width='112' height='112' rx='8' ry='8' />
+<path d='M 544 1076 L 544 1056 Q 544 1048 552 1048 L 648 1048 Q 656 1048 656 1056 L 656 1076 L544 1076 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
+<rect class='entity' x='544' y='1048' width='112' height='112' rx='8' ry='8' style='fill:none;stroke:#393939'/>
+<a xlink:href='#school project.player_buys'><text x='564' y='1067' >player_buys</text><title>Table school project.player_buys</title></a>
+  <use id='nn' x='546' y='1085' xlink:href='#nn'/><use id='pk' x='546' y='1084' xlink:href='#pk'><title>Pk pk_player_buys_purchase_id ( purchase_id ) </title></use><a xlink:href='#school project.player_buys_purchase_id'><text id='school project.player_buys.purchase_id' x='563' y='1095'>purchase_id</text><title>purchase_id
+* int</title></a>
+<text x='653' y='1092' text-anchor='end' class='colType'>#</text>  <use id='nn' x='546' y='1101' xlink:href='#nn'/><a xlink:href='#school project.player_buys_username'><text id='school project.player_buys.username' x='563' y='1111' onmouseover="hghl(['player_buys_fk_player_buys_player','school project.player.username'])" onmouseout="uhghl(['player_buys_fk_player_buys_player','school project.player.username'])">username</text><title>username
+* varchar(100)</title></a>
+<a xlink:href='#school project.player_buys.username'><use id='fk' x='644' y='1100' xlink:href='#fk'/><title>References player ( username ) </title></a>
+  <use id='nn' x='546' y='1117' xlink:href='#nn'/><a xlink:href='#school project.player_buys_item_url'><text id='school project.player_buys.item_url' x='563' y='1127' onmouseover="hghl(['player_buys_fk_player_buys_item','school project.item.url'])" onmouseout="uhghl(['player_buys_fk_player_buys_item','school project.item.url'])">item_url</text><title>item_url
+* varchar(100)</title></a>
+<a xlink:href='#school project.player_buys.item_url'><use id='fk' x='644' y='1116' xlink:href='#fk'/><title>References item ( item_url -&gt; url ) </title></a>
+  <use id='nn' x='546' y='1133' xlink:href='#nn'/><a xlink:href='#school project.player_buys_amount'><text id='school project.player_buys.amount' x='563' y='1143'>amount</text><title>amount
+* int</title></a>
+<text x='653' y='1140' text-anchor='end' class='colType'>#</text>
 <!-- == Table 'item' == -->
 <rect class='entity' style='stroke:#2A3C4F' x='816' y='888' width='64' height='80' rx='8' ry='8' />
 <path d='M 816 916 L 816 896 Q 816 888 824 888 L 872 888 Q 880 888 880 896 L 880 916 L816 916 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
 <rect class='entity' x='816' y='888' width='64' height='80' rx='8' ry='8' style='fill:none;stroke:#393939'/>
 <a xlink:href='#school project.item'><text x='832' y='907' >item</text><title>Table school project.item
 Master item table</title></a>
-  <use id='nn' x='818' y='925' xlink:href='#nn'/><use id='pk' x='818' y='924' xlink:href='#pk'><title>Pk pk_item_url ( url ) </title></use><a xlink:href='#school project.item_url'><text id='school project.item.url' x='835' y='935' onmouseover="hghl(['owns_fk_owns_item','school project.owns.item_url','owns_fk_owns_item','school project.owns.item_url','player_buys_fk_player_buys_item','school project.player_buys.itemurl','player_buys_fk_player_buys_item','school project.player_buys.itemurl','trader_buys_fk_trader_buys_item','school project.trader_buys.item_url','trader_buys_fk_trader_buys_item','school project.trader_buys.item_url','attachment_fk_attachment_item','school project.attachment.item_url','attachment_fk_attachment_item','school project.attachment.item_url','firearm_fk_firearm_item','school project.firearm.item_url','firearm_fk_firearm_item','school project.firearm.item_url','armor_fk_armor_item','school project.armor.item_url','armor_fk_armor_item','school project.armor.item_url','caliber_fk_caliber_item','school project.caliber.item_url','caliber_fk_caliber_item','school project.caliber.item_url'])" onmouseout="uhghl(['owns_fk_owns_item','school project.owns.item_url','owns_fk_owns_item','school project.owns.item_url','player_buys_fk_player_buys_item','school project.player_buys.itemurl','player_buys_fk_player_buys_item','school project.player_buys.itemurl','trader_buys_fk_trader_buys_item','school project.trader_buys.item_url','trader_buys_fk_trader_buys_item','school project.trader_buys.item_url','attachment_fk_attachment_item','school project.attachment.item_url','attachment_fk_attachment_item','school project.attachment.item_url','firearm_fk_firearm_item','school project.firearm.item_url','firearm_fk_firearm_item','school project.firearm.item_url','armor_fk_armor_item','school project.armor.item_url','armor_fk_armor_item','school project.armor.item_url','caliber_fk_caliber_item','school project.caliber.item_url','caliber_fk_caliber_item','school project.caliber.item_url'])">url</text><title>url
+  <use id='nn' x='818' y='925' xlink:href='#nn'/><use id='pk' x='818' y='924' xlink:href='#pk'><title>Pk pk_item_url ( url ) </title></use><a xlink:href='#school project.item_url'><text id='school project.item.url' x='835' y='935' onmouseover="hghl(['armor_fk_armor_item','school project.armor.item_url','attachment_fk_attachment_item','school project.attachment.item_url','caliber_fk_caliber_item','school project.caliber.item_url','firearm_fk_firearm_item','school project.firearm.item_url','owns_fk_owns_item','school project.owns.item_url','player_buys_fk_player_buys_item','school project.player_buys.item_url','player_sells_fk_player_buys_item_0','school project.player_sells.item_url','suppressor_fk_attachment_item_0','school project.suppressor.item_url','trader_buys_fk_trader_buys_item','school project.trader_buys.item_url','trader_sells_fk_trader_buys_item_0','school project.trader_sells.item_url','suppressor_fk_attachment_item_0','school project.suppressor.item_url','caliber_fk_caliber_item','school project.caliber.item_url','firearm_fk_firearm_item','school project.firearm.item_url','attachment_fk_attachment_item','school project.attachment.item_url','armor_fk_armor_item','school project.armor.item_url','owns_fk_owns_item','school project.owns.item_url','player_sells_fk_player_buys_item_0','school project.player_sells.item_url','player_buys_fk_player_buys_item','school project.player_buys.item_url','trader_buys_fk_trader_buys_item','school project.trader_buys.item_url','trader_sells_fk_trader_buys_item_0','school project.trader_sells.item_url'])" onmouseout="uhghl(['armor_fk_armor_item','school project.armor.item_url','attachment_fk_attachment_item','school project.attachment.item_url','caliber_fk_caliber_item','school project.caliber.item_url','firearm_fk_firearm_item','school project.firearm.item_url','owns_fk_owns_item','school project.owns.item_url','player_buys_fk_player_buys_item','school project.player_buys.item_url','player_sells_fk_player_buys_item_0','school project.player_sells.item_url','suppressor_fk_attachment_item_0','school project.suppressor.item_url','trader_buys_fk_trader_buys_item','school project.trader_buys.item_url','trader_sells_fk_trader_buys_item_0','school project.trader_sells.item_url','suppressor_fk_attachment_item_0','school project.suppressor.item_url','caliber_fk_caliber_item','school project.caliber.item_url','firearm_fk_firearm_item','school project.firearm.item_url','attachment_fk_attachment_item','school project.attachment.item_url','armor_fk_armor_item','school project.armor.item_url','owns_fk_owns_item','school project.owns.item_url','player_sells_fk_player_buys_item_0','school project.player_sells.item_url','player_buys_fk_player_buys_item','school project.player_buys.item_url','trader_buys_fk_trader_buys_item','school project.trader_buys.item_url','trader_sells_fk_trader_buys_item_0','school project.trader_sells.item_url'])">url</text><title>url
 * varchar(100)</title></a>
-<a xlink:href='#school project.item.url'><use id='ref' x='868' y='924' xlink:href='#ref'/><title>Referred by owns ( item_url -&gt; url ) 
-Referred by owns ( item_url -&gt; url ) 
-Referred by player_buys ( itemurl -&gt; url ) 
-Referred by player_buys ( itemurl -&gt; url ) 
-Referred by trader_buys ( item_url -&gt; url ) 
-Referred by trader_buys ( item_url -&gt; url ) 
+<a xlink:href='#school project.item.url'><use id='ref' x='868' y='924' xlink:href='#ref'/><title>Referred by armor ( item_url -&gt; url ) 
 Referred by attachment ( item_url -&gt; url ) 
-Referred by attachment ( item_url -&gt; url ) 
-Referred by firearm ( item_url -&gt; url ) 
-Referred by firearm ( item_url -&gt; url ) 
-Referred by armor ( item_url -&gt; url ) 
-Referred by armor ( item_url -&gt; url ) 
 Referred by caliber ( item_url -&gt; url ) 
-Referred by caliber ( item_url -&gt; url ) </title></a>
+Referred by firearm ( item_url -&gt; url ) 
+Referred by owns ( item_url -&gt; url ) 
+Referred by player_buys ( item_url -&gt; url ) 
+Referred by player_sells ( item_url -&gt; url ) 
+Referred by suppressor ( item_url -&gt; url ) 
+Referred by trader_buys ( item_url -&gt; url ) 
+Referred by trader_sells ( item_url -&gt; url ) 
+Referred by suppressor ( item_url -&gt; url ) 
+Referred by caliber ( item_url -&gt; url ) 
+Referred by firearm ( item_url -&gt; url ) 
+Referred by attachment ( item_url -&gt; url ) 
+Referred by armor ( item_url -&gt; url ) 
+Referred by owns ( item_url -&gt; url ) 
+Referred by player_sells ( item_url -&gt; url ) 
+Referred by player_buys ( item_url -&gt; url ) 
+Referred by trader_buys ( item_url -&gt; url ) 
+Referred by trader_sells ( item_url -&gt; url ) </title></a>
   <use id='nn' x='818' y='941' xlink:href='#nn'/><a xlink:href='#school project.item_value'><text id='school project.item.value' x='835' y='951'>value</text><title>value
 * int</title></a>
 <text x='877' y='948' text-anchor='end' class='colType'>#</text>
@@ -705,125 +827,17 @@ Referred by caliber ( item_url -&gt; url ) </title></a>
   <use id='nn' x='1122' y='1101' xlink:href='#nn'/><a xlink:href='#school project.trader_sells_amount'><text id='school project.trader_sells.amount' x='1139' y='1111'>amount</text><title>amount
 * int</title></a>
 <text x='1229' y='1108' text-anchor='end' class='colType'>#</text>
-<!-- == Table 'suppressed' == -->
-<rect class='entity' style='stroke:#2A3C4F' x='720' y='376' width='128' height='80' rx='8' ry='8' />
-<path d='M 720 404 L 720 384 Q 720 376 728 376 L 840 376 Q 848 376 848 384 L 848 404 L720 404 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='720' y='376' width='128' height='80' rx='8' ry='8' style='fill:none;stroke:#393939'/>
-<a xlink:href='#school project.suppressed'><text x='749' y='395' >suppressed</text><title>Table school project.suppressed
-This table stores whether or not a weapon is suppressed and if it is what suppressor is attached to it. Something that isnt suppressed will not be included in here.</title></a>
-  <use id='nn' x='722' y='413' xlink:href='#nn'/><a xlink:href='#school project.suppressed_suppressor_url'><text id='school project.suppressed.suppressor_url' x='739' y='423' onmouseover="hghl(['suppressed_fk_suppressed_suppressed','school project.suppressor.item_url'])" onmouseout="uhghl(['suppressed_fk_suppressed_suppressed','school project.suppressor.item_url'])">suppressor_url</text><title>suppressor_url
+<!-- == Table 'traders' == -->
+<rect class='entity' style='stroke:#2A3C4F' x='1296' y='904' width='112' height='64' rx='8' ry='8' />
+<path d='M 1296 932 L 1296 912 Q 1296 904 1304 904 L 1400 904 Q 1408 904 1408 912 L 1408 932 L1296 932 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
+<rect class='entity' x='1296' y='904' width='112' height='64' rx='8' ry='8' style='fill:none;stroke:#393939'/>
+<a xlink:href='#school project.traders'><text x='1329' y='923' >traders</text><title>Table school project.traders</title></a>
+  <use id='nn' x='1298' y='941' xlink:href='#nn'/><use id='pk' x='1298' y='940' xlink:href='#pk'><title>Pk pk_traders_trader_name ( trader_name ) </title></use><a xlink:href='#school project.traders_trader_name'><text id='school project.traders.trader_name' x='1315' y='951' onmouseover="hghl(['trader_buys_fk_trader_buys_traders','school project.trader_buys.trader_name','trader_sells_fk_trader_buys_traders_0','school project.trader_sells.trader_name','trader_buys_fk_trader_buys_traders','school project.trader_buys.trader_name','trader_sells_fk_trader_buys_traders_0','school project.trader_sells.trader_name'])" onmouseout="uhghl(['trader_buys_fk_trader_buys_traders','school project.trader_buys.trader_name','trader_sells_fk_trader_buys_traders_0','school project.trader_sells.trader_name','trader_buys_fk_trader_buys_traders','school project.trader_buys.trader_name','trader_sells_fk_trader_buys_traders_0','school project.trader_sells.trader_name'])">trader_name</text><title>trader_name
 * varchar(100)</title></a>
-<a xlink:href='#school project.suppressed.suppressor_url'><use id='fk' x='836' y='412' xlink:href='#fk'/><title>References suppressor ( suppressor_url -&gt; item_url ) </title></a>
-  <use id='nn' x='722' y='429' xlink:href='#nn'/><use id='pk' x='722' y='428' xlink:href='#pk'><title>Pk idx_suppressed ( firearm_uid ) </title></use><a xlink:href='#school project.suppressed_firearm_uid'><text id='school project.suppressed.firearm_uid' x='739' y='439' onmouseover="hghl(['suppressed_fk_suppressed_firearm','school project.firearm.uid'])" onmouseout="uhghl(['suppressed_fk_suppressed_firearm','school project.firearm.uid'])">firearm_uid</text><title>firearm_uid
-* int</title></a>
-<a xlink:href='#school project.suppressed.firearm_uid'><use id='fk' x='836' y='428' xlink:href='#fk'/><title>References firearm ( firearm_uid -&gt; uid ) </title></a>
-
-<!-- == Table 'player_sells' == -->
-<rect class='entity' style='stroke:#2A3E4F' x='560' y='904' width='96' height='112' rx='8' ry='8' />
-<path d='M 560 932 L 560 912 Q 560 904 568 904 L 648 904 Q 656 904 656 912 L 656 932 L560 932 ' style='fill:url(#tbg_3986C1);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='560' y='904' width='96' height='112' rx='8' ry='8' style='fill:none;stroke:#393939'/>
-<a xlink:href='#school project.player_sells'><text x='573' y='923' >player_sells</text><title>Table school project.player_sells</title></a>
-  <use id='nn' x='562' y='941' xlink:href='#nn'/><use id='pk' x='562' y='940' xlink:href='#pk'><title>Pk pk_player_buys_purchase_id_0 ( sell_id ) </title></use><a xlink:href='#school project.player_sells_sell_id'><text id='school project.player_sells.sell_id' x='579' y='951'>sell_id</text><title>sell_id
-* int</title></a>
-<text x='653' y='948' text-anchor='end' class='colType'>#</text>  <use id='nn' x='562' y='957' xlink:href='#nn'/><a xlink:href='#school project.player_sells_username'><text id='school project.player_sells.username' x='579' y='967' onmouseover="hghl(['player_sells_fk_player_buys_player_0','school project.player.username'])" onmouseout="uhghl(['player_sells_fk_player_buys_player_0','school project.player.username'])">username</text><title>username
-* varchar(100)</title></a>
-<a xlink:href='#school project.player_sells.username'><use id='fk' x='644' y='956' xlink:href='#fk'/><title>References player ( username ) </title></a>
-  <use id='nn' x='562' y='973' xlink:href='#nn'/><a xlink:href='#school project.player_sells_itemurl'><text id='school project.player_sells.itemurl' x='579' y='983' onmouseover="hghl(['player_sells_fk_player_buys_item_0','school project.item.url'])" onmouseout="uhghl(['player_sells_fk_player_buys_item_0','school project.item.url'])">itemurl</text><title>itemurl
-* varchar(100)</title></a>
-<a xlink:href='#school project.player_sells.itemurl'><use id='fk' x='644' y='972' xlink:href='#fk'/><title>References item ( itemurl -&gt; url ) </title></a>
-  <use id='nn' x='562' y='989' xlink:href='#nn'/><a xlink:href='#school project.player_sells_amount'><text id='school project.player_sells.amount' x='579' y='999'>amount</text><title>amount
-* int</title></a>
-<text x='653' y='996' text-anchor='end' class='colType'>#</text>
-<!-- == Table 'player' == -->
-<rect class='entity' style='stroke:#2A3C4F' x='256' y='824' width='96' height='96' rx='8' ry='8' />
-<path d='M 256 852 L 256 832 Q 256 824 264 824 L 344 824 Q 352 824 352 832 L 352 852 L256 852 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='256' y='824' width='96' height='96' rx='8' ry='8' style='fill:none;stroke:#393939'/>
-<a xlink:href='#school project.player'><text x='283' y='843' >player</text><title>Table school project.player</title></a>
-  <use id='nn' x='258' y='861' xlink:href='#nn'/><use id='pk' x='258' y='860' xlink:href='#pk'><title>Unq unq_player_username ( username ) Pk pk_player_username ( username ) </title></use><a xlink:href='#school project.player_username'><text id='school project.player.username' x='275' y='871' onmouseover="hghl(['trade_fk_trade_player','school project.trade.seller','trade_fk_trade_seller','school project.trade.seller','trade_fk_trade_buyer','school project.trade.buyer','trade_fk_trade_buyer','school project.trade.buyer','trade_fk_trade_seller','school project.trade.seller','owns_fk_owns_player','school project.owns.player_name','owns_fk_owns_player','school project.owns.player_name','player_buys_fk_player_buys_player','school project.player_buys.username','player_buys_fk_player_buys_player','school project.player_buys.username'])" onmouseout="uhghl(['trade_fk_trade_player','school project.trade.seller','trade_fk_trade_seller','school project.trade.seller','trade_fk_trade_buyer','school project.trade.buyer','trade_fk_trade_buyer','school project.trade.buyer','trade_fk_trade_seller','school project.trade.seller','owns_fk_owns_player','school project.owns.player_name','owns_fk_owns_player','school project.owns.player_name','player_buys_fk_player_buys_player','school project.player_buys.username','player_buys_fk_player_buys_player','school project.player_buys.username'])">username</text><title>username
-* varchar(100)</title></a>
-<a xlink:href='#school project.player.username'><use id='ref' x='340' y='860' xlink:href='#ref'/><title>Referred by trade ( seller -&gt; username ) 
-Referred by trade ( seller -&gt; username ) 
-Referred by trade ( buyer -&gt; username ) 
-Referred by trade ( buyer -&gt; username ) 
-Referred by trade ( seller -&gt; username ) 
-Referred by owns ( player_name -&gt; username ) 
-Referred by owns ( player_name -&gt; username ) 
-Referred by player_buys ( username ) 
-Referred by player_buys ( username ) </title></a>
-  <use id='nn' x='258' y='877' xlink:href='#nn'/><a xlink:href='#school project.player_level'><text id='school project.player.level' x='275' y='887'>level</text><title>level
-* int</title></a>
-<text x='349' y='884' text-anchor='end' class='colType'>#</text>  <use id='nn' x='258' y='893' xlink:href='#nn'/><a xlink:href='#school project.player_money'><text id='school project.player.money' x='275' y='903'>money</text><title>money
-* int</title></a>
-<text x='349' y='900' text-anchor='end' class='colType'>#</text>
-<!-- == Table 'trade' == -->
-<rect class='entity' style='stroke:#2A3C4F' x='48' y='808' width='96' height='128' rx='8' ry='8' />
-<path d='M 48 836 L 48 816 Q 48 808 56 808 L 136 808 Q 144 808 144 816 L 144 836 L48 836 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='48' y='808' width='96' height='128' rx='8' ry='8' style='fill:none;stroke:#393939'/>
-<a xlink:href='#school project.trade'><text x='78' y='827' >trade</text><title>Table school project.trade</title></a>
-  <use id='nn' x='50' y='845' xlink:href='#nn'/><use id='pk' x='50' y='844' xlink:href='#pk'><title>Pk pk_trade_trade_uid ( trade_uid ) </title></use><a xlink:href='#school project.trade_trade_uid'><text id='school project.trade.trade_uid' x='67' y='855'>trade_uid</text><title>trade_uid
-* int</title></a>
-<text x='141' y='852' text-anchor='end' class='colType'>#</text>  <use id='nn' x='50' y='861' xlink:href='#nn'/><a xlink:href='#school project.trade_item_url'><text id='school project.trade.item_url' x='67' y='871'>item_url</text><title>item_url
-* longtext</title></a>
-<text x='141' y='868' text-anchor='end' class='colType'>t</text>  <use id='nn' x='50' y='877' xlink:href='#nn'/><a xlink:href='#school project.trade_cost'><text id='school project.trade.cost' x='67' y='887'>cost</text><title>cost
-* int</title></a>
-<text x='141' y='884' text-anchor='end' class='colType'>#</text>  <use id='nn' x='50' y='893' xlink:href='#nn'/><a xlink:href='#school project.trade_seller'><text id='school project.trade.seller' x='67' y='903' onmouseover="hghl(['trade_fk_trade_seller','school project.player.username'])" onmouseout="uhghl(['trade_fk_trade_seller','school project.player.username'])">seller</text><title>seller
-* varchar(100)</title></a>
-<a xlink:href='#school project.trade.seller'><use id='fk' x='132' y='892' xlink:href='#fk'/><title>References player ( seller -&gt; username ) </title></a>
-  <use id='nn' x='50' y='909' xlink:href='#nn'/><a xlink:href='#school project.trade_buyer'><text id='school project.trade.buyer' x='67' y='919' onmouseover="hghl(['trade_fk_trade_buyer','school project.player.username'])" onmouseout="uhghl(['trade_fk_trade_buyer','school project.player.username'])">buyer</text><title>buyer
-* varchar(100)</title></a>
-<a xlink:href='#school project.trade.buyer'><use id='fk' x='132' y='908' xlink:href='#fk'/><title>References player ( buyer -&gt; username ) </title></a>
-
-<!-- == Table 'armor' == -->
-<rect class='entity' style='stroke:#2A3C4F' x='224' y='552' width='80' height='96' rx='8' ry='8' />
-<path d='M 224 580 L 224 560 Q 224 552 232 552 L 296 552 Q 304 552 304 560 L 304 580 L224 580 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='224' y='552' width='80' height='96' rx='8' ry='8' style='fill:none;stroke:#393939'/>
-<a xlink:href='#school project.armor'><text x='243' y='571' >armor</text><title>Table school project.armor</title></a>
-  <use id='nn' x='226' y='589' xlink:href='#nn'/><use id='pk' x='226' y='588' xlink:href='#pk'><title>Pk idx_armor ( zone, item_url ) </title></use><a xlink:href='#school project.armor_zone'><text id='school project.armor.zone' x='243' y='599'>zone</text><title>zone
-* varchar(100)</title></a>
-<text x='301' y='596' text-anchor='end' class='colType'>t</text>  <use id='nn' x='226' y='605' xlink:href='#nn'/><use id='pk' x='226' y='604' xlink:href='#pk'><title>Pk idx_armor ( zone, item_url ) </title></use><a xlink:href='#school project.armor_item_url'><text id='school project.armor.item_url' x='243' y='615' onmouseover="hghl(['armor_fk_armor_item','school project.item.url'])" onmouseout="uhghl(['armor_fk_armor_item','school project.item.url'])">item_url</text><title>item_url
-* varchar(100)</title></a>
-<a xlink:href='#school project.armor.item_url'><use id='fk' x='292' y='604' xlink:href='#fk'/><title>References item ( item_url -&gt; url ) </title></a>
-  <use id='nn' x='226' y='621' xlink:href='#nn'/><use id='idx' x='226' y='620' xlink:href='#idx'><title>unq_armor_class ( class ) </title></use><a xlink:href='#school project.armor_class'><text id='school project.armor.class' x='243' y='631' onmouseover="hghl(['penetrates_fk_penetrates_armor','school project.penetrates.armor_class','penetrates_fk_penetrates_armor','school project.penetrates.armor_class'])" onmouseout="uhghl(['penetrates_fk_penetrates_armor','school project.penetrates.armor_class','penetrates_fk_penetrates_armor','school project.penetrates.armor_class'])">class</text><title>class
-* int default 0</title></a>
-<a xlink:href='#school project.armor.class'><use id='ref' x='292' y='620' xlink:href='#ref'/><title>Referred by penetrates ( armor_class -&gt; class ) 
-Referred by penetrates ( armor_class -&gt; class ) </title></a>
-
-<!-- == Table 'firearm' == -->
-<rect class='entity' style='stroke:#2A3C4F' x='544' y='520' width='112' height='128' rx='8' ry='8' />
-<path d='M 544 548 L 544 528 Q 544 520 552 520 L 648 520 Q 656 520 656 528 L 656 548 L544 548 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='544' y='520' width='112' height='128' rx='8' ry='8' style='fill:none;stroke:#393939'/>
-<a xlink:href='#school project.firearm'><text x='576' y='539' >firearm</text><title>Table school project.firearm</title></a>
-  <use id='nn' x='546' y='557' xlink:href='#nn'/><use id='pk' x='546' y='556' xlink:href='#pk'><title>Pk pk_firearm_uid ( uid ) </title></use><a xlink:href='#school project.firearm_uid'><text id='school project.firearm.uid' x='563' y='567' onmouseover="hghl(['suppressed_fk_suppressed_firearm','school project.suppressed.firearm_uid','suppressed_fk_suppressed_firearm','school project.suppressed.firearm_uid','chambers_fk_chambers_firearm','school project.chambers.firearm_uid','firearm_compat_fk_attachement_compat_0','school project.firearm_compat.compatible_firearm','firearm_compat_fk_attachement_compat_0','school project.firearm_compat.compatible_firearm','fitted_to_fk_fitted_to_firearm','school project.fitted_to.firearm_uid'])" onmouseout="uhghl(['suppressed_fk_suppressed_firearm','school project.suppressed.firearm_uid','suppressed_fk_suppressed_firearm','school project.suppressed.firearm_uid','chambers_fk_chambers_firearm','school project.chambers.firearm_uid','firearm_compat_fk_attachement_compat_0','school project.firearm_compat.compatible_firearm','firearm_compat_fk_attachement_compat_0','school project.firearm_compat.compatible_firearm','fitted_to_fk_fitted_to_firearm','school project.fitted_to.firearm_uid'])">uid</text><title>uid
-* int</title></a>
-<a xlink:href='#school project.firearm.uid'><use id='ref' x='644' y='556' xlink:href='#ref'/><title>Referred by suppressed ( firearm_uid -&gt; uid ) 
-Referred by suppressed ( firearm_uid -&gt; uid ) 
-Referred by chambers ( firearm_uid -&gt; uid ) 
-Referred by firearm_compat ( compatible_firearm -&gt; uid ) 
-Referred by firearm_compat ( compatible_firearm -&gt; uid ) 
-Referred by fitted_to ( firearm_uid -&gt; uid ) </title></a>
-  <use id='nn' x='546' y='573' xlink:href='#nn'/><a xlink:href='#school project.firearm_recoil'><text id='school project.firearm.recoil' x='563' y='583'>recoil</text><title>recoil
-* double default 0
-This is an attribute derived from the weapon_url's base recoil value and the recoil modifiers from any attachments fitted onto it. Note that recoil modifiers are handled as percentage values when calculating recoil. So a forgrip might have a recoil mod of -5 so you would multiply the base value of the weapon by .95 to get its adjusted value.</title></a>
-<text x='653' y='580' text-anchor='end' class='colType'>#</text>  <use id='nn' x='546' y='589' xlink:href='#nn'/><a xlink:href='#school project.firearm_ergonomics'><text id='school project.firearm.ergonomics' x='563' y='599'>ergonomics</text><title>ergonomics
-* double default 0
-This is an attribute derived from the weapon_url's base ergo value and the ergo modifiers from any attachments fitted onto it.</title></a>
-<text x='653' y='596' text-anchor='end' class='colType'>#</text>  <use id='nn' x='546' y='605' xlink:href='#nn'/><a xlink:href='#school project.firearm_type'><text id='school project.firearm.type' x='563' y='615'>type</text><title>type
-* varchar(100)</title></a>
-<text x='653' y='612' text-anchor='end' class='colType'>t</text>  <use id='nn' x='546' y='621' xlink:href='#nn'/><a xlink:href='#school project.firearm_item_url'><text id='school project.firearm.item_url' x='563' y='631' onmouseover="hghl(['firearm_fk_firearm_item','school project.item.url'])" onmouseout="uhghl(['firearm_fk_firearm_item','school project.item.url'])">item_url</text><title>item_url
-* varchar(100)</title></a>
-<a xlink:href='#school project.firearm.item_url'><use id='fk' x='644' y='620' xlink:href='#fk'/><title>References item ( item_url -&gt; url ) </title></a>
-
-<!-- == Table 'firearm_compat' == -->
-<rect class='entity' style='stroke:#2A3E4F' x='1136' y='328' width='144' height='80' rx='8' ry='8' />
-<path d='M 1136 356 L 1136 336 Q 1136 328 1144 328 L 1272 328 Q 1280 328 1280 336 L 1280 356 L1136 356 ' style='fill:url(#tbg_3986C1);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='1136' y='328' width='144' height='80' rx='8' ry='8' style='fill:none;stroke:#393939'/>
-<a xlink:href='#school project.firearm_compat'><text x='1161' y='347' >firearm_compat</text><title>Table school project.firearm_compat</title></a>
-  <use id='nn' x='1138' y='365' xlink:href='#nn'/><use id='pk' x='1138' y='364' xlink:href='#pk'><title>Pk idx_attachement_compat_0 ( attachment_url, compatible_firearm ) </title></use><a xlink:href='#school project.firearm_compat_attachment_url'><text id='school project.firearm_compat.attachment_url' x='1155' y='375' onmouseover="hghl(['firearm_compat_fk_firearm_compat1','school project.attachment.item_url'])" onmouseout="uhghl(['firearm_compat_fk_firearm_compat1','school project.attachment.item_url'])">attachment_url</text><title>attachment_url
-* varchar(100)</title></a>
-<a xlink:href='#school project.firearm_compat.attachment_url'><use id='fk' x='1268' y='364' xlink:href='#fk'/><title>References attachment ( attachment_url -&gt; item_url ) </title></a>
-  <use id='nn' x='1138' y='381' xlink:href='#nn'/><use id='pk' x='1138' y='380' xlink:href='#pk'><title>Pk idx_attachement_compat_0 ( attachment_url, compatible_firearm ) </title></use><a xlink:href='#school project.firearm_compat_compatible_firearm'><text id='school project.firearm_compat.compatible_firearm' x='1155' y='391' onmouseover="hghl(['firearm_compat_fk_attachement_compat_0','school project.firearm.uid'])" onmouseout="uhghl(['firearm_compat_fk_attachement_compat_0','school project.firearm.uid'])">compatible_firearm</text><title>compatible_firearm
-* int</title></a>
-<a xlink:href='#school project.firearm_compat.compatible_firearm'><use id='fk' x='1268' y='380' xlink:href='#fk'/><title>References firearm ( compatible_firearm -&gt; uid ) </title></a>
+<a xlink:href='#school project.traders.trader_name'><use id='ref' x='1396' y='940' xlink:href='#ref'/><title>Referred by trader_buys ( trader_name ) 
+Referred by trader_sells ( trader_name ) 
+Referred by trader_buys ( trader_name ) 
+Referred by trader_sells ( trader_name ) </title></a>
 
 <!-- == Callout == -->
 <rect class='callout' x='304' y='32' width='624' height='67' rx='16' ry='16'  />
@@ -835,7 +849,30 @@ This is an attribute derived from the weapon_url's base ergo value and the ergo 
 </g></svg></div>
 <div class='container'>
 
-<br><br>
+<div class='card'><div class='card-body'>
+<h5 class='card-title'>Tables</h5>
+<ul>
+<li><a href='#school+project.armor'/>school project.armor</a>
+<li><a href='#school+project.attachement_compat'/>school project.attachement_compat</a>
+<li><a href='#school+project.attachment'/>school project.attachment</a>
+<li><a href='#school+project.caliber'/>school project.caliber</a>
+<li><a href='#school+project.chambers'/>school project.chambers</a>
+<li><a href='#school+project.firearm'/>school project.firearm</a>
+<li><a href='#school+project.firearm_compat'/>school project.firearm_compat</a>
+<li><a href='#school+project.fitted_to'/>school project.fitted_to</a>
+<li><a href='#school+project.item'/>school project.item</a>
+<li><a href='#school+project.owns'/>school project.owns</a>
+<li><a href='#school+project.penetrates'/>school project.penetrates</a>
+<li><a href='#school+project.player'/>school project.player</a>
+<li><a href='#school+project.player_buys'/>school project.player_buys</a>
+<li><a href='#school+project.player_sells'/>school project.player_sells</a>
+<li><a href='#school+project.suppressed'/>school project.suppressed</a>
+<li><a href='#school+project.suppressor'/>school project.suppressor</a>
+<li><a href='#school+project.trade'/>school project.trade</a>
+<li><a href='#school+project.trader_buys'/>school project.trader_buys</a>
+<li><a href='#school+project.trader_sells'/>school project.trader_sells</a>
+<li><a href='#school+project.traders'/>school project.traders</a></ul>
+</div></div><br><br><br>
 <div class='card'><div class='card-body'><a name='school+project.armor' onclick='window.scrollTo(60, 560);return false;' style='cursor:pointer;'><h5 class='card-title'>Table armor</h5></a>
 <table class='table table-sm table-bordered small' style='table-layout: fixed; word-wrap: break-word;'>
 <thead>
@@ -855,7 +892,7 @@ This is an attribute derived from the weapon_url's base ergo value and the ergo 
 		<td>  </td>
 	</tr>
 	<tr>
-		<td>*<svg width='14' height='14'><use xlink:href='#idx'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td>*<svg width='14' height='14'><use xlink:href='#unq'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
 		<td><a name='school+project.armor_class'>class</a></td>
 		<td> int  DEFAULT 0 </td>
 		<td>  </td>
@@ -865,7 +902,7 @@ This is an attribute derived from the weapon_url's base ergo value and the ergo 
 		<td> ON zone&#44; item&#95;url</td>
 		<td>  </td>
 	</tr>
-	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>unq&#95;armor&#95;class</td>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg></td><td>unq&#95;armor&#95;class</td>
 		<td> ON class</td>
 		<td>  </td>
 	</tr>
@@ -1327,7 +1364,7 @@ This is an attribute derived from the weapon_url's base ergo value and the ergo 
 	</tr>
 	<tr>
 		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
-		<td><a name='school+project.player_buys_itemurl'>itemurl</a></td>
+		<td><a name='school+project.player_buys_item_url'>item&#95;url</a></td>
 		<td> varchar&#40;100&#41;  </td>
 		<td>  </td>
 	</tr>
@@ -1350,14 +1387,14 @@ This is an attribute derived from the weapon_url's base ergo value and the ergo 
 	</tr>
 	<tr>
 		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_player_buys_item</td>
-		<td > ( itemurl ) ref <a href='#school project&#46;item'>item</a> (url) </td>
+		<td > ( item&#95;url ) ref <a href='#school project&#46;item'>item</a> (url) </td>
 		<td>  </td>
 	</tr>
 </tbody>
 </table></div></div>
 
 <br><br>
-<div class='card'><div class='card-body'><a name='school+project.player_sells' onclick='window.scrollTo(360, 912);return false;' style='cursor:pointer;'><h5 class='card-title'>Table player_sells</h5></a>
+<div class='card'><div class='card-body'><a name='school+project.player_sells' onclick='window.scrollTo(248, 880);return false;' style='cursor:pointer;'><h5 class='card-title'>Table player_sells</h5></a>
 <table class='table table-sm table-bordered small' style='table-layout: fixed; word-wrap: break-word;'>
 <thead>
 <tr><th style='width:5%'>Idx</th><th style='width:20%'>Field Name</th><th style='width:23%'>Data Type</th><th style='width:52%'>Description</th></tr>
@@ -1377,7 +1414,7 @@ This is an attribute derived from the weapon_url's base ergo value and the ergo 
 	</tr>
 	<tr>
 		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
-		<td><a name='school+project.player_sells_itemurl'>itemurl</a></td>
+		<td><a name='school+project.player_sells_item_url'>item&#95;url</a></td>
 		<td> varchar&#40;100&#41;  </td>
 		<td>  </td>
 	</tr>
@@ -1400,7 +1437,7 @@ This is an attribute derived from the weapon_url's base ergo value and the ergo 
 	</tr>
 	<tr>
 		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_player_buys_item_0</td>
-		<td > ( itemurl ) ref <a href='#school project&#46;item'>item</a> (url) </td>
+		<td > ( item&#95;url ) ref <a href='#school project&#46;item'>item</a> (url) </td>
 		<td>  </td>
 	</tr>
 </tbody>
@@ -1500,7 +1537,7 @@ This is an attribute derived from the weapon_url's base ergo value and the ergo 
 	<tr>
 		<td>*</td>
 		<td><a name='school+project.trade_item_url'>item&#95;url</a></td>
-		<td> longtext  </td>
+		<td> varchar&#40;100&#41;  </td>
 		<td>  </td>
 	</tr>
 	<tr>
