@@ -2,7 +2,8 @@ CREATE SCHEMA `school project`;
 
 CREATE TABLE `school project`.item ( 
 	url                  varchar(100)  NOT NULL    PRIMARY KEY,
-	value                int  NOT NULL    
+	value                int  NOT NULL    ,
+	`type`               varchar(100)  NOT NULL    
  );
 
 ALTER TABLE `school project`.item COMMENT 'Master item table';
@@ -70,7 +71,6 @@ CREATE TABLE `school project`.firearm (
 	uid                  int  NOT NULL  AUTO_INCREMENT  PRIMARY KEY,
 	recoil               double  NOT NULL DEFAULT 0   ,
 	ergonomics           double  NOT NULL DEFAULT 0   ,
-	`type`               varchar(100)  NOT NULL    ,
 	item_url             varchar(100)  NOT NULL    
  );
 

@@ -86,7 +86,6 @@
 				<defo>0</defo>
 				<comment><![CDATA[This is an attribute derived from the weapon_url's base ergo value and the ergo modifiers from any attachments fitted onto it.]]></comment>
 			</column>
-			<column name="type" type="varchar" length="100" jt="12" mandatory="y" />
 			<column name="item_url" type="varchar" length="100" jt="12" mandatory="y" />
 			<index name="pk_firearm_uid" unique="PRIMARY_KEY" >
 				<column name="uid" />
@@ -127,6 +126,7 @@
 			<comment><![CDATA[Master item table]]></comment>
 			<column name="url" type="varchar" length="100" jt="12" mandatory="y" />
 			<column name="value" type="int" jt="4" mandatory="y" />
+			<column name="type" type="varchar" length="100" jt="12" mandatory="y" />
 			<index name="pk_item_url" unique="PRIMARY_KEY" >
 				<column name="url" />
 			</index>
@@ -288,27 +288,27 @@
 	<connector name="" database="MySql" host="localhost" port="3306" user="root" />
 	<layout name="Default Layout" id="Layout_5122e6e" show_relation="columns" >
 		<comment><![CDATA[School Project]]></comment>
-		<entity schema="school project" name="chambers" color="C1D8EE" x="608" y="208" />
-		<entity schema="school project" name="suppressor" color="3986C1" x="832" y="192" />
-		<entity schema="school project" name="attachement_compat" color="C1D8EE" x="1104" y="240" />
-		<entity schema="school project" name="caliber" color="C1D8EE" x="320" y="304" />
-		<entity schema="school project" name="firearm_compat" color="3986C1" x="1136" y="336" />
-		<entity schema="school project" name="suppressed" color="C1D8EE" x="720" y="384" />
-		<entity schema="school project" name="penetrates" color="C1D8EE" x="240" y="432" />
-		<entity schema="school project" name="firearm" color="C1D8EE" x="544" y="528" />
-		<entity schema="school project" name="fitted_to" color="C1D8EE" x="816" y="560" />
-		<entity schema="school project" name="attachment" color="C1D8EE" x="1088" y="560" />
-		<entity schema="school project" name="armor" color="C1D8EE" x="224" y="560" />
-		<entity schema="school project" name="trade" color="C1D8EE" x="48" y="816" />
-		<entity schema="school project" name="player" color="C1D8EE" x="256" y="832" />
-		<entity schema="school project" name="owns" color="C1D8EE" x="544" y="768" />
-		<entity schema="school project" name="player_sells" color="3986C1" x="448" y="880" />
-		<entity schema="school project" name="player_buys" color="C1D8EE" x="544" y="1056" />
-		<entity schema="school project" name="item" color="C1D8EE" x="816" y="896" />
-		<entity schema="school project" name="trader_buys" color="C1D8EE" x="1104" y="832" />
-		<entity schema="school project" name="trader_sells" color="3986C1" x="1120" y="1040" />
-		<entity schema="school project" name="traders" color="C1D8EE" x="1296" y="912" />
-		<callout x="304" y="48" pointer="Round" >
+		<entity schema="school project" name="trader_buys" color="C1D8EE" x="1136" y="832" />
+		<entity schema="school project" name="trader_sells" color="3986C1" x="1152" y="1040" />
+		<entity schema="school project" name="player_buys" color="C1D8EE" x="576" y="1120" />
+		<entity schema="school project" name="player_sells" color="3986C1" x="576" y="928" />
+		<entity schema="school project" name="owns" color="C1D8EE" x="560" y="768" />
+		<entity schema="school project" name="player" color="C1D8EE" x="256" y="912" />
+		<entity schema="school project" name="trade" color="C1D8EE" x="48" y="896" />
+		<entity schema="school project" name="traders" color="C1D8EE" x="1344" y="944" />
+		<entity schema="school project" name="attachment" color="C1D8EE" x="1328" y="560" />
+		<entity schema="school project" name="firearm_compat" color="3986C1" x="1440" y="384" />
+		<entity schema="school project" name="attachement_compat" color="C1D8EE" x="1424" y="240" />
+		<entity schema="school project" name="fitted_to" color="C1D8EE" x="848" y="560" />
+		<entity schema="school project" name="suppressor" color="3986C1" x="1024" y="672" />
+		<entity schema="school project" name="suppressed" color="C1D8EE" x="816" y="672" />
+		<entity schema="school project" name="chambers" color="C1D8EE" x="576" y="352" />
+		<entity schema="school project" name="caliber" color="C1D8EE" x="560" y="160" />
+		<entity schema="school project" name="penetrates" color="C1D8EE" x="304" y="176" />
+		<entity schema="school project" name="armor" color="C1D8EE" x="272" y="560" />
+		<entity schema="school project" name="firearm" color="C1D8EE" x="576" y="528" />
+		<entity schema="school project" name="item" color="C1D8EE" x="848" y="896" />
+		<callout x="336" y="48" pointer="Round" >
 			<comment><![CDATA[This project is in offline mode.
 Design the schema and save the design to project file. Later create or upgrade the schema on any database.
 Right-click the layout to add new tables. Drop this callout from its right-click pop-up menu.]]></comment>
@@ -483,8 +483,7 @@ CREATE TABLE `school project`.chambers (
 	CONSTRAINT idx_chambers PRIMARY KEY ( caliber_url, firearm_uid ),
 	CONSTRAINT fk_chambers_caliber FOREIGN KEY ( caliber_url ) REFERENCES `school project`.caliber( item_url ) ON DELETE NO ACTION ON UPDATE NO ACTION,
 	CONSTRAINT fk_chambers_firearm FOREIGN KEY ( firearm_uid ) REFERENCES `school project`.firearm( uid ) ON DELETE NO ACTION ON UPDATE NO ACTION
- );
-]]></string>
+ );]]></string>
 		</script>
 		<script name="SQL_Editor_001" id="Editor_18c8001" language="SQL" >
 			<string><![CDATA[CREATE SCHEMA `school project`;
@@ -681,8 +680,7 @@ ALTER TABLE `school project`.trader_buys ADD CONSTRAINT fk_trader_buys_traders F
 
 ALTER TABLE `school project`.trader_sells ADD CONSTRAINT fk_trader_buys_item_0 FOREIGN KEY ( item_url ) REFERENCES `school project`.item( url ) ON DELETE CASCADE ON UPDATE CASCADE;
 
-ALTER TABLE `school project`.trader_sells ADD CONSTRAINT fk_trader_buys_traders_0 FOREIGN KEY ( trader_name ) REFERENCES `school project`.traders( trader_name ) ON DELETE CASCADE ON UPDATE CASCADE;
-]]></string>
+ALTER TABLE `school project`.trader_sells ADD CONSTRAINT fk_trader_buys_traders_0 FOREIGN KEY ( trader_name ) REFERENCES `school project`.traders( trader_name ) ON DELETE CASCADE ON UPDATE CASCADE;]]></string>
 		</script>
 	</layout>
 </project>

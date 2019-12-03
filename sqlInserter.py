@@ -27,3 +27,4 @@ cnx.close()
 # If a dictionary contains class then it will go into armor.
 # For penetration I will need to iterate through all armors for every caliber to determine penetration
 # to determine penetration I will just check to see if the penetration value of the round divided by 10 is greater than the class of the armor its against.
+# Im also going to need to make random costs for every item, like a random value between 1000 and 500000

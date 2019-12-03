@@ -86,7 +86,6 @@
 				<defo>0</defo>
 				<comment><![CDATA[This is an attribute derived from the weapon_url's base ergo value and the ergo modifiers from any attachments fitted onto it.]]></comment>
 			</column>
-			<column name="type" type="varchar" length="100" jt="12" mandatory="y" />
 			<column name="item_url" type="varchar" length="100" jt="12" mandatory="y" />
 			<index name="pk_firearm_uid" unique="PRIMARY_KEY" >
 				<column name="uid" />
@@ -127,6 +126,7 @@
 			<comment><![CDATA[Master item table]]></comment>
 			<column name="url" type="varchar" length="100" jt="12" mandatory="y" />
 			<column name="value" type="int" jt="4" mandatory="y" />
+			<column name="type" type="varchar" length="100" jt="12" mandatory="y" />
 			<index name="pk_item_url" unique="PRIMARY_KEY" >
 				<column name="url" />
 			</index>
@@ -288,8 +288,6 @@
 	<connector name="" database="MySql" host="localhost" port="3306" user="root" />
 	<layout name="Default Layout" id="Layout_5122e6e" show_relation="columns" >
 		<comment><![CDATA[School Project]]></comment>
-		<entity schema="school project" name="firearm" color="C1D8EE" x="576" y="528" />
-		<entity schema="school project" name="item" color="C1D8EE" x="848" y="896" />
 		<entity schema="school project" name="trader_buys" color="C1D8EE" x="1136" y="832" />
 		<entity schema="school project" name="trader_sells" color="3986C1" x="1152" y="1040" />
 		<entity schema="school project" name="player_buys" color="C1D8EE" x="576" y="1120" />
@@ -308,6 +306,8 @@
 		<entity schema="school project" name="caliber" color="C1D8EE" x="560" y="160" />
 		<entity schema="school project" name="penetrates" color="C1D8EE" x="304" y="176" />
 		<entity schema="school project" name="armor" color="C1D8EE" x="272" y="560" />
+		<entity schema="school project" name="firearm" color="C1D8EE" x="576" y="528" />
+		<entity schema="school project" name="item" color="C1D8EE" x="848" y="896" />
 		<callout x="336" y="48" pointer="Round" >
 			<comment><![CDATA[This project is in offline mode.
 Design the schema and save the design to project file. Later create or upgrade the schema on any database.
