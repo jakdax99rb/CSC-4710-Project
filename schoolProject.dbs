@@ -90,20 +90,21 @@
 			<index name="pk_firearm_uid" unique="PRIMARY_KEY" >
 				<column name="uid" />
 			</index>
+			<index name="unq_firearm_item_url" unique="UNIQUE" >
+				<column name="item_url" />
+			</index>
 			<fk name="fk_firearm_item" to_schema="school project" to_table="item" delete_action="cascade" update_action="cascade" >
 				<fk_column name="item_url" pk="url" />
 			</fk>
 		</table>
 		<table name="firearm_compat" generator_rows="225" >
 			<column name="attachment_url" type="varchar" length="100" jt="12" mandatory="y" />
-			<column name="compatible_firearm" type="int" length="100" jt="4" mandatory="y" />
+			<column name="compatible_firearm" type="varchar" length="100" jt="12" mandatory="y" />
 			<index name="idx_attachement_compat_0" unique="PRIMARY_KEY" >
 				<column name="attachment_url" />
 				<column name="compatible_firearm" />
 			</index>
-			<fk name="fk_attachement_compat_0" to_schema="school project" to_table="firearm" delete_action="cascade" update_action="cascade" >
-				<fk_column name="compatible_firearm" pk="uid" />
-			</fk>
+			<fk name="fk_attachement_compat_0" to_schema="school project" to_table="firearm" delete_action="cascade" update_action="cascade" />
 			<fk name="fk_firearm_compat1" to_schema="school project" to_table="attachment" delete_action="cascade" update_action="cascade" >
 				<fk_column name="attachment_url" pk="item_url" />
 			</fk>
@@ -297,7 +298,6 @@
 		<entity schema="school project" name="trade" color="C1D8EE" x="48" y="896" />
 		<entity schema="school project" name="traders" color="C1D8EE" x="1344" y="944" />
 		<entity schema="school project" name="attachment" color="C1D8EE" x="1328" y="560" />
-		<entity schema="school project" name="firearm_compat" color="3986C1" x="1440" y="384" />
 		<entity schema="school project" name="attachement_compat" color="C1D8EE" x="1424" y="240" />
 		<entity schema="school project" name="fitted_to" color="C1D8EE" x="848" y="560" />
 		<entity schema="school project" name="suppressor" color="3986C1" x="1024" y="672" />
@@ -308,6 +308,7 @@
 		<entity schema="school project" name="armor" color="C1D8EE" x="272" y="560" />
 		<entity schema="school project" name="firearm" color="C1D8EE" x="576" y="528" />
 		<entity schema="school project" name="item" color="C1D8EE" x="848" y="896" />
+		<entity schema="school project" name="firearm_compat" color="3986C1" x="1440" y="384" />
 		<callout x="336" y="48" pointer="Round" >
 			<comment><![CDATA[This project is in offline mode.
 Design the schema and save the design to project file. Later create or upgrade the schema on any database.

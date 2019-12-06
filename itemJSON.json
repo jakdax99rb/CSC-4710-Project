@@ -9161,20 +9161,6 @@
         "weight": 0.317
     },
     {
-        "accuracy%": "4",
-        "ergonomics": -5.0,
-        "examineexperience": 2.0,
-        "gridsize": "2x1",
-        "itemLink": "https://escapefromtarkov.gamepedia.com/Eotech_HHS-1_sight",
-        "itemName": "Eotech HHS-1 sight",
-        "lootexperience": 30.0,
-        "modes": "2",
-        "sightingrange": "600",
-        "soldby": "Black: Peacekeeper LL4Tan: Peacekeeper LL4 after completing his task The guide",
-        "type": "Reflex sight",
-        "weight": 0.635
-    },
-    {
         "accuracy%": "1",
         "ergonomics": -2.0,
         "gridsize": "1x1",
@@ -9679,25 +9665,6 @@
         "soldby": "Mechanic LL2",
         "type": "Iron sight",
         "weight": 0.07
-    },
-    {
-        "Compatibility": [
-            "/Noveske_Gen.3_5.56x45_Upper_receiver_for_AR_systems",
-            "/Upper_receiver_ADAR_2-15_5.56x45_for_2-15_assault_rifle",
-            "/Upper_receiver_Colt_M4A1_5.56x45_for_M4A1_assault_rifle",
-            "/Upper_receiver_HK_416A5_5.56x45_for_416A5",
-            "/Vltor_MUR-1S_5.56x45_Upper_receiver_for_AR_systems"
-        ],
-        "accuracy%": "0",
-        "ergonomics": 0.0,
-        "gridsize": "1x1",
-        "itemLink": "https://escapefromtarkov.gamepedia.com/HK_416A5_Flip_Up_Rearsight",
-        "itemName": "HK 416A5 Flip Up Rearsight",
-        "lootexperience": 20.0,
-        "sightingrange": "300",
-        "soldby": "Peacekeeper LL2",
-        "type": "Iron sight",
-        "weight": 0.14
     },
     {
         "Compatibility": [
@@ -15188,7 +15155,6 @@
             "/AS_VAL_Pistol_grip-buffer_tube",
             "/Colt_buffer_tube",
             "/Fab_Defence_buffer_tube_for_AGR-870",
-            "/HK_%22Enhanced_Tube%22_buffer_tube",
             "/HK_%22Enhanced_Tube%22_buffer_tube",
             "/Izhmash_RPK-16_buffer_tube",
             "/LEO_stock_adapter_for_M870",

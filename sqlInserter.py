@@ -1,13 +1,14 @@
 import json
 import mysql.connector
 import random
+import re
 
 
 def sqlInserter(bigArray):
 
     cnx = mysql.connector.connect(user='root', password='',
                                   host='127.0.0.1',
-                                  database='school project')
+                                  database='school_project')
     cursor = cnx.cursor()
 
     for item in bigArray['itemArray']:
@@ -84,6 +85,162 @@ def sqlInserter(bigArray):
     cnx.close()
 
 
+def compatInserter(bigArray):
+
+    cnx = mysql.connector.connect(user='root', password='',
+                                  host='127.0.0.1',
+                                  database='school_project')
+    cursor = cnx.cursor()
+
+    for item in bigArray['attachmentArray']:
+
+        for compat in item['Compatibility']:
+
+            temp = 'https://escapefromtarkov.gamepedia.com' + compat
+
+            for compat2 in bigArray['itemArray']:
+
+                if 'type' in compat2:
+
+                    if 'Compatibility' in compat2 and compat2['type'] != 'suppressor' and 'recoil%' in compat2 and 'ergonomics' in compat2 and compat2['itemLink'] == temp:
+
+                        sqlString = ('Insert into attachement_compat '
+                                     '(attachment_url, compatible_attachment) '
+                                     'Values (( select url from item where url = \'' +
+                                     item['itemLink'][:100] +
+                                     '\'), (select url from item where url = \''
+                                     + compat2['itemLink'][:100] + '\'))')
+                        print(sqlString)
+                        cursor.execute(sqlString)
+
+                    elif 'horizontalRecoil' in compat2 and compat2['itemLink'] == temp:
+
+                        sqlString = ('Insert into firearm_compat '
+                                     '(attachment_url, compatible_firearm) '
+                                     'Values (( select url from item where url = \'' +
+                                     item['itemLink'][:100] +
+                                     '\'), (select url from item where url = \''
+                                     + compat2['itemLink'][:100] + '\'))')
+                        print(sqlString)
+                        cursor.execute(sqlString)
+
+    # handle the closing of everything.
+    cnx.commit()
+    cursor.close()
+    cnx.close()
+
+
+def armorPen(bigArray):
+
+    cnx = mysql.connector.connect(user='root', password='',
+                                  host='127.0.0.1',
+                                  database='school_project')
+    cursor = cnx.cursor()
+
+    for ammo in bigArray['ammoArray']:
+
+        for x in range(2, 6):
+
+            if int(ammo['penetrationpower']) / 10 >= x:
+
+                sqlString = ('Insert into penetrates '
+                             '(caliber_url, armor_class) '
+                             'Values (( select url from item where url = \'' +
+                             ammo['itemLink'][:100] +
+                             '\'), ( ' + str(x) + '))')
+                print(sqlString)
+                cursor.execute(sqlString)
+
+    # handle the closing of everything.
+    cnx.commit()
+    cursor.close()
+    cnx.close()
+
+
+def traderInserter(bigArray):
+
+    cnx = mysql.connector.connect(user='root', password='',
+                                  host='127.0.0.1',
+                                  database='school_project')
+    cursor = cnx.cursor()
+
+    '''
+    
+    cursor.execute('insert into traders (trader_name) Values (\'Jaeger LL1\')')
+    cursor.execute(
+        'insert into traders (trader_name) Values (\'Therapist LL1\')')
+    cursor.execute('insert into traders (trader_name) Values (\'Prapor LL1\')')
+    cursor.execute(
+        'insert into traders (trader_name) Values (\'Peacekeeper LL1\')')
+    cursor.execute('insert into traders (trader_name) Values (\'Skier LL1\')')
+    cursor.execute(
+        'insert into traders (trader_name) Values (\'Mechanic LL1\')')
+    cursor.execute('insert into traders (trader_name) Values (\'Ragman LL1\')')
+
+    cursor.execute('insert into traders (trader_name) Values (\'Jaeger LL2\')')
+    cursor.execute(
+        'insert into traders (trader_name) Values (\'Therapist LL2\')')
+    cursor.execute('insert into traders (trader_name) Values (\'Prapor LL2\')')
+    cursor.execute(
+        'insert into traders (trader_name) Values (\'Peacekeeper LL2\')')
+    cursor.execute('insert into traders (trader_name) Values (\'Skier LL2\')')
+    cursor.execute(
+        'insert into traders (trader_name) Values (\'Mechanic LL2\')')
+    cursor.execute('insert into traders (trader_name) Values (\'Ragman LL2\')')
+
+    cursor.execute('insert into traders (trader_name) Values (\'Jaeger LL3\')')
+    cursor.execute(
+        'insert into traders (trader_name) Values (\'Therapist LL3\')')
+    cursor.execute('insert into traders (trader_name) Values (\'Prapor LL3\')')
+    cursor.execute(
+        'insert into traders (trader_name) Values (\'Peacekeeper LL3\')')
+    cursor.execute('insert into traders (trader_name) Values (\'Skier LL3\')')
+    cursor.execute(
+        'insert into traders (trader_name) Values (\'Mechanic LL3\')')
+    cursor.execute('insert into traders (trader_name) Values (\'Ragman LL3\')')
+
+    cursor.execute('insert into traders (trader_name) Values (\'Jaeger LL4\')')
+    cursor.execute(
+        'insert into traders (trader_name) Values (\'Therapist LL4\')')
+    cursor.execute('insert into traders (trader_name) Values (\'Prapor LL4\')')
+    cursor.execute(
+        'insert into traders (trader_name) Values (\'Peacekeeper LL4\')')
+    cursor.execute('insert into traders (trader_name) Values (\'Skier LL4\')')
+    cursor.execute(
+        'insert into traders (trader_name) Values (\'Mechanic LL4\')')  
+    cursor.execute('insert into traders (trader_name) Values (\'Ragman LL4\')')
+
+    '''
+
+    for item in bigArray['itemArray']:
+
+        if 'soldby' in item:
+            '''
+            sqlString = ('Insert into trader_buys '
+                         '(trader_name, item_url, amount) '
+                         'Values (( select trader_name from traders where trader_name = \'' +
+                         re.search('^[a-zA-Z]+ LL\d', item['soldby'])[0] +
+                         '\'), ( select url from item where url = \'' + item['itemLink'][:100] + '\'), ' + str(random.randint(1, 1000)) + ' )')
+            print(sqlString)
+            cursor.execute(sqlString)
+            cnx.commit()
+            '''
+
+            sqlString = ('Insert into trader_sells '
+                         '(trader_name, item_url, amount) '
+                         'Values (( select trader_name from traders where trader_name = \'' +
+                         re.search('^[a-zA-Z]+ LL\d', item['soldby'])[0] +
+                         '\'), ( select url from item where url = \'' + item['itemLink'][:100] + '\'), ' + str(random.randint(1, 1000)) + ' )')
+            print(sqlString)
+            cursor.execute(sqlString)
+            cnx.commit()
+
+    # handle the closing of everything.
+    cnx.commit()
+    cursor.close()
+    cnx.close()
+
+
 def sortItemsIntoArrays(itemArray):
     # Sort every item into the various sub classes by using multiple different arrays to make future stuff easier.
 
@@ -134,7 +291,7 @@ with open('itemJSON.json', 'r') as file:
 
     itemArray = json.loads(file.read())
 
-sqlInserter(sortItemsIntoArrays(itemArray))
+traderInserter(sortItemsIntoArrays(itemArray))
 
 
 # Insert everything as an item first so I can do foreign key stuff easily.
